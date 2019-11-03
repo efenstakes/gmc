@@ -44,7 +44,7 @@ class _GMCAppBarState extends State<GMCAppBar> {
                         child: Image.asset('assets/logos/gmc.png'),
                         maxRadius: 48)),
                 SizedBox(width: 100),
-                _navBtn('home', () => _navToPages(Home())),
+                _navBtn('home', () => _navToPages(Landing())),
                 SizedBox(width: 20),
                 _navBtn('challenges', () => _navToPages(ChallengesIndex())),
                 SizedBox(width: 20),
