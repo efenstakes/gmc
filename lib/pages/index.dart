@@ -5,8 +5,10 @@ import '../utils/responsive_widget.dart';
 class Landing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return ResponsiveWidget(
+      largeScreen: Scaffold(),
+      mediumScreen: Scaffold(),
+      smallScreen: Scaffold(),
     );
   }
 }
