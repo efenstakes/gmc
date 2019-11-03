@@ -38,7 +38,7 @@ class _GMCAppBarState extends State<GMCAppBar> {
               Container(
                   child: Row(children: <Widget>[
                 GestureDetector(
-                    onTap: () => _navToPages(Home()),
+                    onTap: () => _navToPages(Landing()),
                     child: CircleAvatar(
                         backgroundColor: Colors.transparent,
                         child: Image.asset('assets/logos/gmc.png'),
