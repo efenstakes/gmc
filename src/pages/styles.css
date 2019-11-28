@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.page {
+    max-width: 80%;
+    margin: auto auto;
+}
+
+.top-img-text-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blue-container {
+    display: flex;
+    flex-flow: row wrap;
+    color: blue;    
+}
+
+.blue-container p {
+        color: blue;
+}
