@@ -18,11 +18,44 @@
 }
 
 .blue-container {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     color: blue;    
+    justify-content: space-between;
+    align-items: center;
 }
 
 .blue-container p {
         color: blue;
+}
+
+.blue-container .text-container {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reasons-to-join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reasons-to-join .isometric-and-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners .partners-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
