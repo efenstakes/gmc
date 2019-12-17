@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components'
+import { Row, BlueContainer, ReasonsToJoin, Page, Partners} from '../components/styled_components'
 
 const Landing: React.FC = () => {
     return (
@@ -62,64 +62,3 @@ const Landing: React.FC = () => {
 }
 
 export default Landing;
-
-const Row = styled.div`
-    padding: 20px 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    div, p {
-        background-color: transparent;
-    }
-`
-
-const BlueContainer = styled.div`
-    padding: 20px 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: blue;
-    div, p {
-        background-color: transparent;
-    }
-`
-
-const ReasonsToJoin = styled.div`
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: grey;
-    div, p {
-        background-color: transparent;
-    }
-    .isometric-and-text-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-`
-
-const Partners = styled.div `
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .partners-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        div {
-            margin: 10px;
-        }
-    }
-`
-
-const Page = styled.div`
-    max-width: 80%;
-    margin: auto auto;
-`
