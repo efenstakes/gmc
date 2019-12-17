@@ -1,18 +1,26 @@
 import React from 'react';
-import { Row, BlueContainer, ReasonsToJoin, Page, Partners} from '../components/styled_components'
+import { Row, BlueContainer, ReasonsToJoin, Page, Partners } from '../components/styled_components'
 
 const Landing: React.FC = () => {
     return (
-        <Page>
+        <div>
+            <Page>
 
-            {/* top image + welcome text */}
-            <Row>
-                <div><p>THE FUTURE IS NOW</p>
-                <br/>
-                <p>The Great Minds Challenge is a two-months program which</p>
-                </div>
-                <div><img src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png" alt=""/></div>
-            </Row>
+                {/* top image + welcome text */}
+                <Row>
+                    <div><h2>THE FUTURE IS NOW!</h2>
+                        <br />
+                        <p>The Great Minds Challenge is a two-months program</p>
+                        <p>which will culminate with a three-day high-powered</p>
+                        <p>challenge. The most innovative global thinkers,</p>
+                        <p>entrepreneurs and scholars will be brought together</p>
+                        <p>under one program to enable the formation of the new</p>
+                        <p>generation leaders.</p>
+                    </div>
+                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png" alt="" /></div>
+                </Row>
+
+            </Page>
 
             {/* container with highlighted text */}
             <BlueContainer>
@@ -24,32 +32,32 @@ const Landing: React.FC = () => {
             {/* container with reasons to join gmc */}
             <ReasonsToJoin>
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png" alt=""/></div>
-                    <div>Personal development, systems thinking and coaching</div>
+                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png" alt="" /></div>
+                    <div><p>Personal development, systems thinking and</p><p>coaching.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png" alt=""/></div>
-                    <div>Experience creativity techniques and how to continuously innovate</div>
+                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png" alt="" /></div>
+                    <div><p>Experience creativity techniques and how to</p><p>continuously innovate.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png" alt=""/></div>
-                    <div>Text here</div>
+                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png" alt="" /></div>
+                    <div><p>Gain knowledge from inspirational & influential</p><p>leaders.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
                     <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png" alt="" /></div>
-                    <div>Text here</div>
+                    <div><p>Network, co-create and acquire new mind sets</p><p>with new generation leaders.</p></div>
                 </div>
             </ReasonsToJoin>
-            
+
             {/* partners section */}
             <Partners>
-                <p>Partners</p>
+                <h2>Partners</h2>
                 <br />
                 <div className="partners-row">
                     <div>Bidco</div>
@@ -60,7 +68,10 @@ const Landing: React.FC = () => {
                 </div>
             </Partners>
 
-        </Page>
+        </div>
+
+
+
     )
 }
 
