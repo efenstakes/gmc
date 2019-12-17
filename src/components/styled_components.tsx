@@ -78,4 +78,5 @@ export const Partners = styled.div`
 export const Page = styled.div`
     max-width: 80%;
     margin: auto auto;
+    font-family: "Nunito", sans-serif;
 `
