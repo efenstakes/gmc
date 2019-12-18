@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gmc_test_environment/static/css/main.1493e849.chunk.css",
+    "main.js": "/gmc_test_environment/static/js/main.c21b90de.chunk.js",
+    "main.js.map": "/gmc_test_environment/static/js/main.c21b90de.chunk.js.map",
+    "runtime-main.js": "/gmc_test_environment/static/js/runtime-main.8274ebb1.js",
+    "runtime-main.js.map": "/gmc_test_environment/static/js/runtime-main.8274ebb1.js.map",
+    "static/js/2.de4c824a.chunk.js": "/gmc_test_environment/static/js/2.de4c824a.chunk.js",
+    "static/js/2.de4c824a.chunk.js.map": "/gmc_test_environment/static/js/2.de4c824a.chunk.js.map",
+    "index.html": "/gmc_test_environment/index.html",
+    "precache-manifest.4ae584cab16e022a863250caa88778c3.js": "/gmc_test_environment/precache-manifest.4ae584cab16e022a863250caa88778c3.js",
+    "service-worker.js": "/gmc_test_environment/service-worker.js",
+    "static/css/main.1493e849.chunk.css.map": "/gmc_test_environment/static/css/main.1493e849.chunk.css.map",
+    "static/js/2.de4c824a.chunk.js.LICENSE": "/gmc_test_environment/static/js/2.de4c824a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8274ebb1.js",
+    "static/js/2.de4c824a.chunk.js",
+    "static/css/main.1493e849.chunk.css",
+    "static/js/main.c21b90de.chunk.js"
+  ]
+}
