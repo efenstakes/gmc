@@ -1,4 +1,5 @@
 {
+  "homepage": "https://mianzegregory.github.io/gmc_test_environment",
   "name": "gmc_website",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/reactstrap": "^8.2.0",
     "@types/styled-components": "^4.4.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
@@ -20,6 +22,8 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
