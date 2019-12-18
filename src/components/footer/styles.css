@@ -4,6 +4,30 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+}
+
+.copyrights, p {
+    background-color: transparent;
+    color: white;
+}
+.copyrights, .social_links {
+    margin: 10px 80px;
+}
+
+.social_links, .social_links p {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.social_links p {
+    margin-right: 40px;
 }
