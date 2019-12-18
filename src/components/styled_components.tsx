@@ -91,7 +91,7 @@ font-family: "Nunito", sans-serif;
 //section with partners
 export const Partners = styled.div`
 font-family: "Nunito", sans-serif;
-    padding: 20px 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,19 @@ font-family: "Nunito", sans-serif;
         justify-content: space-between;
         align-items: center;
         div {
-            margin: 10px;
+            margin: 0 70px;
+        }
+        #klm {
+            height: 60px;
+            width: 60px;
+        }
+        #clarity {
+            height: 40px;
+            width: 120px;
+        }
+        #incentro {
+            height: 25px;
+            width: 120px;
         }
     }
 `

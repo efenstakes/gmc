@@ -60,11 +60,11 @@ const Landing: React.FC = () => {
                 <h2>Partners</h2>
                 <br />
                 <div className="partners-row">
-                    <div>Bidco</div>
-                    <div>KLM</div>
-                    <div>Clarity4D</div>
-                    <div>Incentro</div>
-                    <div>View All Btn</div>
+                    <div><img id="bidco" src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png" alt="" /></div>
+                    <div><img id="klm" src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg" alt="" /></div>
+                    <div><img id="clarity" src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png" alt="" /></div>
+                    <div>< img id="incentro" src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png" alt=""/></div>
+                    <a className="view_all_btn" href="#"><button>VIEW ALL</button></a>
                 </div>
             </Partners>
 
