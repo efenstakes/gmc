@@ -4,6 +4,8 @@ import Footer from './components/footer/footer'
 import Landing from './pages/index'
 import Challenges from './pages/challenges/index'
 import Contact from './pages/contact'
+import About from './pages/about'
+import RegisterIndex from './pages/register/index'
 
 const App: React.FC = () => {
   return (
@@ -11,8 +13,10 @@ const App: React.FC = () => {
       <Toolbar />
 
       {/* <Landing />
-      <Challenges /> */}
-      <Contact />
+      <Challenges />
+      <Contact /> 
+      <About /> */}
+      <RegisterIndex />
 
       <Footer />
     </div>

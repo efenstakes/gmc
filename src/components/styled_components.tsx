@@ -158,6 +158,24 @@ export const Page = styled.div`
   max-width: 80%;
   margin: auto auto;
   font-family: "Nunito", sans-serif;
+  text-align: center;
+  h2 {
+    color: #4f7cbd;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+  }
+  h3 {
+    color: grey;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    line-height: 2;
+  }
+  h3 span {
+    color: #4f7cbd;
+    font-weight: 600;
+  }
 `;
 
 //column
