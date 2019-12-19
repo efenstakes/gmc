@@ -178,6 +178,16 @@ export const Page = styled.div`
   }
 `;
 
+//full height page wrapper
+export const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+
+  #content-wrap {
+    padding-bottom: 60px;
+  }
+`;
+
 //column
 export const Column = styled.div`
   max-width: 50%;

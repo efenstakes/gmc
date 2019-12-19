@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <About /> */}
       <RegisterIndex />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
