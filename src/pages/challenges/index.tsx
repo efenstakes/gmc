@@ -21,9 +21,41 @@ const Challenges: React.FC = () => {
 
             {/* container with reasons to join gmc */}
             <ReasonsToJoin>
-            <h2>ANNUAL CHALLENGES</h2><br/><br/>
+            <h2>ANNUAL CHALLENGES</h2>
+            <div className="img-row">
+                <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>Induction</p>
+                </div>
 
-            <h2>IN-HOUSE</h2><br/><br/>
+                <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>3-day challenge</p>
+                </div>
+
+                <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>commencement</p>
+                </div>
+            </div>
+
+            <h2>IN-HOUSE</h2>
+            <div className="img-row">
+            <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>Induction</p>
+                </div>
+
+                <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>3-day challenge</p>
+                </div>
+
+                <div className="img-container">
+                    <img src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" alt=""/>
+                    <p>commencement</p>
+                </div>
+            </div>
             </ReasonsToJoin>
 
         </div>

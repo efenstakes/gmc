@@ -98,6 +98,24 @@ export const ReasonsToJoin = styled.div`
   h2 {
     color: #4f7cbd;
     letter-spacing: 1.5px;
+    background-color: transparent;
+  }
+  .img-row {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-around;
+    vertical-align: middle;
+    text-align: center;
+    padding: 60px 0;
+    img { 
+      height: 175px;
+      width: 175px;
+      border-radius: 50%;
+    }
+    p {
+      margin-top: 10px;
+    }
   }
 `;
 
