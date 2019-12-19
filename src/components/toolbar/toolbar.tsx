@@ -7,13 +7,13 @@ const Toolbar: React.FC = () => {
             <img className="logo" src="https://ik.imagekit.io/sgmianze96/gmc/logo_SYBSgDHHV.svg" alt="Logo" />
             <nav>
                 <ul className="nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Challenges</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Talk to us</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CHALLENGES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">TALK TO US</a></li>
                 </ul>
             </nav>
-            <a className="btn" href="#"><button>Sign up</button></a>
+            <a className="btn" href="#"><button>SIGN UP</button></a>
         </div>
     )
 
