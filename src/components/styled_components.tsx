@@ -108,7 +108,7 @@ export const ReasonsToJoin = styled.div`
     vertical-align: middle;
     text-align: center;
     padding: 60px 0;
-    img { 
+    img {
       height: 175px;
       width: 175px;
       border-radius: 50%;
@@ -158,4 +158,12 @@ export const Page = styled.div`
   max-width: 80%;
   margin: auto auto;
   font-family: "Nunito", sans-serif;
+`;
+
+//column
+export const Column = styled.div`
+  max-width: 50%;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
 `;
