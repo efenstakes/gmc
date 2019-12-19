@@ -166,4 +166,27 @@ export const Column = styled.div`
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
+  h2 {
+    margin-bottom: 40px;
+  }
+  label {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #4f7cbd;
+  }
+  .gmc-input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+  .gmc-input-message {
+    padding: 8px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+  }
 `;
