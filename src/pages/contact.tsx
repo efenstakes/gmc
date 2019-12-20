@@ -4,7 +4,7 @@ import { Page, Row, Column } from "../components/styled_components";
 const Contact: React.FC = () => {
   return (
     <Page>
-      <br /><br/><br/><br/>
+      <br /><br/><br/><br/><br/><br/>
       <Row>
         <Column>
           <h2>SEND US A MESSAGE</h2>

@@ -5,7 +5,7 @@ export default class RegisterIndex extends React.Component {
   render() {
     return (
         <Page>
-          <br /><br/><br/><br/>
+          <br /><br/><br/><br/><br/><br/>
           <h2>Who are we looking for?</h2>
           <br />
           <h3>
