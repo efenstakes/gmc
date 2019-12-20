@@ -1,11 +1,12 @@
 import React from 'react';
-import { Row, BlueContainer, ReasonsToJoin, Page, Partners } from '../components/styled_components'
+import { Row, BlueContainer, ReasonsToJoin, Page, Partners, Wrapper } from '../components/styled_components'
 
 const Landing: React.FC = () => {
     return (
         <div>
+            
             <Page>
-
+            <br/><br/><br/><br/>
                 {/* top image + welcome text */}
                 <Row>
                     <div><h2>THE FUTURE IS NOW!</h2>

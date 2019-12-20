@@ -1,14 +1,11 @@
 import React from "react";
 import { Page, Row, Wrapper } from "../../components/styled_components";
-import Footer from "../../components/footer/footer"
 
 export default class RegisterIndex extends React.Component {
   render() {
     return (
-      <Wrapper>
-          <div id="content-wrap">
         <Page>
-          <br />
+          <br /><br/><br/><br/>
           <h2>Who are we looking for?</h2>
           <br />
           <h3>
@@ -28,9 +25,6 @@ export default class RegisterIndex extends React.Component {
             </button>
           </Row>
         </Page>
-        </div>
-        <Footer />
-      </Wrapper>
     );
   }
 }

@@ -6,6 +6,7 @@ const Challenges: React.FC = () => {
     return(
         <div>
             <Page>
+            <br /><br/><br/><br/>
                 <Row>
                 <div><h2>CHALLENGES</h2>
                         <br />
