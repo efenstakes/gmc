@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, BlueContainer, ReasonsToJoin, Page, Partners, Wrapper } from '../components/styled_components'
+import { Row, BlueContainer, ReasonsToJoin, Page, Partners, Column } from '../components/styled_components'
 
 const Landing: React.FC = () => {
     return (
@@ -33,25 +33,25 @@ const Landing: React.FC = () => {
             {/* container with reasons to join gmc */}
             <ReasonsToJoin>
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png" alt="" /></div>
+                    <div><img id="personal_dev" src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png" alt="" /></div>
                     <div><p>Personal development, systems thinking and</p><p>coaching.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png" alt="" /></div>
+                    <div><img id="creativity" src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png" alt="" /></div>
                     <div><p>Experience creativity techniques and how to</p><p>continuously innovate.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png" alt="" /></div>
+                    <div><img id="knowledge" src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png" alt="" /></div>
                     <div><p>Gain knowledge from inspirational & influential</p><p>leaders.</p></div>
                 </div>
                 <br />
 
                 <div className="isometric-and-text-container">
-                    <div><img src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png" alt="" /></div>
+                    <div><img id="network" src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png" alt="" /></div>
                     <div><p>Network, co-create and acquire new mind sets</p><p>with new generation leaders.</p></div>
                 </div>
             </ReasonsToJoin>

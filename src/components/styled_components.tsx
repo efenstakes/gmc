@@ -91,6 +91,18 @@ export const ReasonsToJoin = styled.div`
     height: 120px;
     width: 180px;
   }
+  #creativity {
+    height: 140px;
+    width: 150px;
+  }
+  #network {
+    height: 120px;
+    width: 170px;
+  }
+  #knowledge {
+    height: 120px;
+    width: 160px;
+  }
   p {
     font-size: 24px;
     color: #4f7cbd;
