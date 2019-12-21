@@ -12,7 +12,7 @@ import { isMobile } from "react-device-detect";
 const App: React.FC = () => {
   return isMobile ? (
     <div
-      style={{ display: "flex", flexDirection: "column", textAlign: "center", maxWidth: "80%"}}
+      style={{ display: "flex", flexDirection: "column", textAlign: "center", maxWidth: "80%", verticalAlign: "middle"}}
     >
       <p>
         This website is still being developed on mobile. Please use your PC for
