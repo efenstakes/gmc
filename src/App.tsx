@@ -7,9 +7,19 @@ import Contact from "./pages/contact";
 import About from "./pages/about";
 import RegisterIndex from "./pages/register/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { isMobile } from "react-device-detect";
 
 const App: React.FC = () => {
-  return (
+  return isMobile ? (
+    <div
+      style={{ display: "flex", flexDirection: "column", textAlign: "center", maxWidth: "80%"}}
+    >
+      <p>
+        This website is still being developed on mobile. Please use your PC for
+        now
+      </p>
+    </div>
+  ) : (
     <div className="App">
       <BrowserRouter>
         <Toolbar />
