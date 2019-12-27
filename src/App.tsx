@@ -1,5 +1,5 @@
 import React from "react";
-import Toolbar from "./components/toolbar/toolbar";
+import Toolbar from "./components/layout/Toolbar";
 import Footer from "./components/footer/footer";
 import Landing from "./pages/index";
 import Challenges from "./pages/challenges/index";
@@ -8,6 +8,8 @@ import About from "./pages/about";
 import RegisterIndex from "./pages/register/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { isMobile } from "react-device-detect";
+
+import './App.css'
 
 const App: React.FC = () => {
   return isMobile ? (
