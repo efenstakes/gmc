@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 type Props = {
   id?: any;
   route?: any;
+  style?: any;
   text: string;
 };
 
@@ -12,7 +13,9 @@ export default class Button extends React.Component<Props> {
   render() {
     return (
       <Link to={this.props.route}>
-        <Wrapper id={this.props.id}>{this.props.text}</Wrapper>
+        <Wrapper style={this.props.style} id={this.props.id}>
+          {this.props.text}
+        </Wrapper>
       </Link>
     );
   }

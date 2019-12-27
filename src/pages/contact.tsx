@@ -4,8 +4,9 @@ import Row from "../components/layout/Row";
 import Column from "../components/layout/Column";
 import Image from "../components/common/Image";
 import TitleText from "../components/common/TitleText";
-import BodyText from "../components/common/BodyText";
 import Button from "../components/common/Button";
+import TextField from "../components/common/TextField";
+import TextArea from "../components/common/TextArea";
 
 const Contact: React.FC = () => {
   return (
@@ -13,21 +14,17 @@ const Contact: React.FC = () => {
       <Row>
         <Column>
           <TitleText text="Send us a message" />
+          <br /><br />
           <form className="contact">
-            <label>Your name</label>
-            <input className="gmc-input" type="text" />
+            <TextField label="Your name" />
             <br />
-
-            <label>E-mail address</label>
-            <input className="gmc-input" type="text" />
+            <TextField label="E-mail address" />
             <br />
-
-            <label>Your name</label>
-            <textarea className="gmc-input-message" rows={12}></textarea>
+            <TextArea label="Your message " />
             <br />
             <br />
 
-            <Button text="Send" />
+            <Button style={{width: "100%"}} text="Send" />
           </form>
         </Column>
         <Column>
