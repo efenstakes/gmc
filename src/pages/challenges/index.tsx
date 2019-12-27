@@ -1,6 +1,8 @@
 import React from "react";
-import { Page, ReasonsToJoin } from "../../components/styled_components";
+import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
+import { GreyContainer } from "../../components/common/Container";
+import {ReasonsToJoin} from '../../components/styled_components'
 
 const Challenges: React.FC = () => {
   return (

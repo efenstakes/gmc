@@ -2,23 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 type Props = {
-  text: string;
-  style?: any;
+  text: any;
 };
 
-export default class TitleText extends React.PureComponent<Props> {
+export default class BlueText extends React.PureComponent<Props> {
   render() {
-    return <Wrapper style={this.props.style}>{this.props.text}</Wrapper>;
+    return <Wrapper>{this.props.text}</Wrapper>;
   }
 }
 
-const Wrapper = styled.h1`
+const Wrapper = styled.p`
+  font-size: 24px;
   color: #4f7cbd;
-  letter-spacing: 1.5px;
   font-family: "Nunito", sans-serif;
   letter-spacing: 2px;
   line-height: 2;
   background-color: transparent;
   text-align: left;
-  font-size: 28px;
+  text-decoration: none !important;
 `;

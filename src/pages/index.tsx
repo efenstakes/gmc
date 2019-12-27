@@ -1,16 +1,19 @@
 import React from "react";
-import {
-  BlueContainer,
-  ReasonsToJoin,
-  Page,
-  Partners
-} from "../components/styled_components";
+import { Page, Partners } from "../components/styled_components";
 import TitleText from "../components/common/TitleText";
 import BodyText from "../components/common/BodyText";
+import WhiteTitleText from "../components/common/WhiteTitleText";
+import WhiteBodyText from "../components/common/WhiteBodyText";
+import BlueText from "../components/common/BlueText";
 import Column from "../components/layout/Column";
 import Row from "../components/layout/Row";
 import Image from "../components/common/Image";
 import Button from "../components/common/Button";
+import {
+  BlueContainer,
+  GreyContainer,
+  WhiteContainer
+} from "../components/common/Container";
 
 const Landing: React.FC = () => {
   return (
@@ -32,6 +35,7 @@ const Landing: React.FC = () => {
 
           <Column>
             <Image
+              style={{ borderRadius: "10px" }}
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png"
               height="350px"
               width="600px"
@@ -41,120 +45,107 @@ const Landing: React.FC = () => {
       </Page>
 
       {/* container with highlighted text */}
+
       <BlueContainer>
         <div>
-          <h3>45</h3>
-          <p>Participants to date</p>
+          <WhiteTitleText text="45" />
+          <WhiteBodyText text="Participants to date" />
         </div>
         <div>
-          <h3>15</h3>
-          <p>Participating companies</p>
+          <WhiteTitleText text="15" />
+          <WhiteBodyText text="Participating companies" />
         </div>
         <div>
-          <h3>10</h3>
-          <p>Social impact wildcards</p>
+          <WhiteTitleText text="10" />
+          <WhiteBodyText text="Social impact wildcards" />
         </div>
       </BlueContainer>
 
       {/* container with reasons to join gmc */}
-      <ReasonsToJoin>
+      <GreyContainer>
         <Row>
           <Column>
-            <img
-              id="personal_dev"
+            <Image
+              height="120px"
+              width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png"
-              alt=""
             />
           </Column>
           <Column>
-            <p>Personal development, systems thinking and coaching.</p>
+            <BlueText text="Personal development, systems thinking and coaching." />
           </Column>
         </Row>
 
         <Row>
           <Column>
-            <img
-              id="creativity"
+            <Image
+              height="120px"
+              width="130px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png"
-              alt=""
             />
           </Column>
           <Column>
-            <p>
-              Experience creativity techniques and how to continuously innovate.
-            </p>
+            <BlueText text="Experience creativity techniques and how to continuously innovate." />
           </Column>
         </Row>
 
         <Row>
           <Column>
-            <img
-              id="knowledge"
+            <Image
+              height="120px"
+              width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png"
-              alt=""
             />
           </Column>
           <Column>
-            <p>Gain knowledge from inspirational & influential leaders.</p>
+            <BlueText text="Gain knowledge from inspirational & influential leaders." />
           </Column>
         </Row>
 
         <Row>
           <Column>
-            <img
-              id="network"
+            <Image
+              height="120px"
+              width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png"
-              alt=""
             />
           </Column>
           <Column>
-            <p>
-              Network, co-create and acquire new mind sets with new generation
-              leaders.
-            </p>
+            <BlueText
+              text="Network, co-create and acquire new mind sets with new generation
+              leaders."
+            />
           </Column>
         </Row>
-      </ReasonsToJoin>
+      </GreyContainer>
 
       {/* partners section */}
-      <Partners>
-        <h2>Partners</h2>
-        <br />
-        <div className="partners-row">
-          <div>
-            <img
-              id="bidco"
-              src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              id="klm"
-              src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              id="clarity"
-              src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              id="incentro"
-              src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
-              alt=""
-            />
-          </div>
+      <WhiteContainer>
+        <TitleText text="Partners" style={{ textAlign: "center"}} />
 
+        <Row>
+          <Image src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png" />
+          <Image
+            height="60px"
+            width="60px"
+            src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
+          />
+          <Image
+            height="40px"
+            width="120px"
+            src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
+          />
+          <Image
+            height="25px"
+            width="120px"
+            src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
+          />
           <Button text="View all" />
-        </div>
-      </Partners>
+        </Row>
+      </WhiteContainer>
     </div>
   );
 };
 
 export default Landing;
+

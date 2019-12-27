@@ -5,6 +5,7 @@ type Props = {
   height?: any;
   width?: any;
   id?: any;
+  style?: any 
 };
 
 export default class Image extends React.Component<Props> {
@@ -15,7 +16,7 @@ export default class Image extends React.Component<Props> {
         src={this.props.src}
         height={this.props.height}
         width={this.props.width}
-        style={{ borderRadius: "10px" }}
+        style={this.props.style}
       />
     );
   }
