@@ -22,7 +22,7 @@ const Landing: React.FC = () => {
         {/* top image + welcome text */}
         <Row>
           <Column>
-            <TitleText text="THE FUTUTRE IS NOW!" />
+            <TitleText text="THE FUTURE IS NOW!" />
             <BodyText
               text="The Great Minds Challenge is a two-months program
              which will culminate with a three-day high-powered
