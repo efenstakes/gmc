@@ -2,34 +2,35 @@ import React from "react";
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
 import { GreyContainer } from "../../components/common/Container";
-import {ReasonsToJoin} from '../../components/styled_components'
+import { ReasonsToJoin } from "../../components/styled_components";
+import TitleText from "../../components/common/TitleText";
+import BodyText from "../../components/common/BodyText";
+import Column from "../../components/layout/Column";
+import Image from "../../components/common/Image";
 
 const Challenges: React.FC = () => {
   return (
     <div>
       <Page>
-        <br />
-        <br />
-        <br />
-        <br />
         <Row>
-          <div>
-            <h2>CHALLENGES</h2>
-            <br />
-            <p>The Great Minds Challenge is a two-months program</p>
-            <p>which will culminate with a three-day high-powered</p>
-            <p>challenge. The most innovative global thinkers,</p>
-            <p>entrepreneurs and scholars will be brought together</p>
-            <p>under one program to enable the formation of the new</p>
-            <p>generation leaders.</p>
-          </div>
-          <div>
-            <img
-              id="challenges"
-              src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/challenges_bJA18M2uJ.png"
-              alt=""
+          <Column>
+            <TitleText text="Challenges" />
+            <BodyText
+              text="The Great Minds Challenge is a two-months program
+            which will culminate with a three-day high-powered
+            challenge. The most innovative global thinkers,
+            entrepreneurs and scholars will be brought together
+            under one program to enable the formation of the new
+            generation leaders."
             />
-          </div>
+          </Column>
+          <Column>
+            <Image
+              height="350px"
+              width="450px"
+              src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/challenges_bJA18M2uJ.png"
+            />
+          </Column>
         </Row>
       </Page>
 
