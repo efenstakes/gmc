@@ -1,39 +1,42 @@
 import React from "react";
 import {
-  Row,
   BlueContainer,
   ReasonsToJoin,
   Page,
-  Partners,
-  Column
+  Partners
 } from "../components/styled_components";
+import TitleText from "../components/common/TitleText";
+import BodyText from "../components/common/BodyText";
+import Column from "../components/layout/Column";
+import Row from "../components/layout/Row";
+import Image from "../components/common/Image";
+import Button from "../components/common/Button";
 
 const Landing: React.FC = () => {
   return (
     <div>
       <Page>
-        <br />
-        <br />
-        <br />
-        <br />
         {/* top image + welcome text */}
         <Row>
-          <div>
-            <h2>THE FUTURE IS NOW!</h2>
-            <br />
-            <p>The Great Minds Challenge is a two-months program</p>
-            <p>which will culminate with a three-day high-powered</p>
-            <p>challenge. The most innovative global thinkers,</p>
-            <p>entrepreneurs and scholars will be brought together</p>
-            <p>under one program to enable the formation of the new</p>
-            <p>generation leaders.</p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png"
-              alt=""
+          <Column>
+            <TitleText text="THE FUTUTRE IS NOW!" />
+            <BodyText
+              text="The Great Minds Challenge is a two-months program
+             which will culminate with a three-day high-powered
+             challenge. The most innovative global thinkers,
+             entrepreneurs and scholars will be brought together
+             under one program to enable the formation of the new
+             generation leaders."
             />
-          </div>
+          </Column>
+
+          <Column>
+            <Image
+              src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png"
+              height="350px"
+              width="600px"
+            />
+          </Column>
         </Row>
       </Page>
 
@@ -146,9 +149,8 @@ const Landing: React.FC = () => {
               alt=""
             />
           </div>
-          <a className="view_all_btn" href="#">
-            <button>VIEW ALL</button>
-          </a>
+
+          <Button text="View all" />
         </div>
       </Partners>
     </div>

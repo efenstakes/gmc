@@ -1,51 +1,5 @@
 import styled from "styled-components";
 
-// row with space between
-export const Row = styled.div`
-  font-family: "Nunito", sans-serif;
-  padding: 20px 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  div,
-  p {
-    background-color: transparent;
-  }
-  #challenges {
-    height: 350px;
-    width: 450px;
-  }
-  img {
-    height: 350px;
-    width: 600px;
-    border-radius: 10px;
-  }
-  h2 {
-    color: #4f7cbd;
-    letter-spacing: 1.5px;
-  }
-  p {
-    color: #9698a3;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 5px;
-    letter-spacing: 1.5px;
-  }
-
-  @media (max-width: 1365px) {
-    img {
-      height: 250px;
-      width: 400px;
-    }
-    h2 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 11px;
-    }
-  }
-`;
 //section of the page with blue background
 export const BlueContainer = styled.div`
   font-family: "Nunito", sans-serif;
@@ -167,6 +121,7 @@ export const Partners = styled.div`
 
 //page wrapper
 export const Page = styled.div`
+  padding-top: 100px;
   max-width: 80%;
   margin: auto auto;
   font-family: "Nunito", sans-serif;
@@ -201,33 +156,3 @@ export const Wrapper = styled.div`
   }
 `;
 
-//column
-export const Column = styled.div`
-  max-width: 50%;
-  font-family: "Nunito", sans-serif;
-  display: flex;
-  flex-direction: column;
-  h2 {
-    margin-bottom: 40px;
-  }
-  label {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    color: #4f7cbd;
-  }
-  .gmc-input {
-    padding: 8px;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-  }
-  .gmc-input-message {
-    padding: 8px;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 100%;
-  }
-`;

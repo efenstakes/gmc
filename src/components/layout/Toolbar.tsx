@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Button from "../common/Button";
 
 const Toolbar: React.FC = () => {
   return (
@@ -37,11 +38,7 @@ const Toolbar: React.FC = () => {
           </Link>
         </ul>
       </nav>
-      <Link to="/register">
-        <a className="btn">
-          <button>SIGN UP</button>
-        </a>
-      </Link>
+      <Button text="Sign up" route="/register" />
     </Wrapper>
   );
 };
@@ -58,8 +55,7 @@ const Wrapper = styled.div`
   box-shadow: 0 2px 10px grey;
 
   li,
-  a,
-  button {
+  a {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -68,11 +64,6 @@ const Wrapper = styled.div`
     letter-spacing: 2px;
     text-decoration: none;
   }
-
-  button {
-    color: white;
-  }
-
   .logo {
     cursor: pointer;
     height: 50px;
@@ -94,18 +85,5 @@ const Wrapper = styled.div`
 
   .nav_links li a:hover {
     color: #0088a9;
-  }
-
-  button {
-    padding: 9px 25px;
-    background-color: #4f7cbd;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-
-  button:hover {
-    background-color: green;
   }
 `;
