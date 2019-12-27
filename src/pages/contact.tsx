@@ -2,19 +2,17 @@ import React from "react";
 import { Page } from "../components/styled_components";
 import Row from "../components/layout/Row";
 import Column from "../components/layout/Column";
+import Image from "../components/common/Image";
+import TitleText from "../components/common/TitleText";
+import BodyText from "../components/common/BodyText";
+import Button from "../components/common/Button";
 
 const Contact: React.FC = () => {
   return (
     <Page>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Row>
         <Column>
-          <h2>SEND US A MESSAGE</h2>
+          <TitleText text="Send us a message" />
           <form className="contact">
             <label>Your name</label>
             <input className="gmc-input" type="text" />
@@ -29,13 +27,13 @@ const Contact: React.FC = () => {
             <br />
             <br />
 
-            <button style={{ width: "70%" }}>SEND</button>
+            <Button text="Send" />
           </form>
         </Column>
         <Column>
-          <img
+          <Image
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/contact_rqzHjtxf_.png"
-            alt=""
+            width="90%"
           />
         </Column>
       </Row>
