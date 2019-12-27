@@ -29,20 +29,6 @@ const App: React.FC = () => {
           <Route path="/contact" exact component={Contact} />
           <Route path="/about" exact component={About} />
           <Route path="/register" exact component={RegisterIndex} />
-          <Route
-            path="/"
-            render={() => (
-              <div>
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                404
-              </div>
-            )}
-          />
         </Switch>
       </BrowserRouter>
     </div>
