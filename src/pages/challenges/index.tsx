@@ -1,6 +1,5 @@
 import React from 'react';
 import {Row, Page, ReasonsToJoin, Wrapper} from '../../components/styled_components'
-import Footer from "../../components/footer/footer"
 
 const Challenges: React.FC = () => {
     return(

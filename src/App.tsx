@@ -1,6 +1,6 @@
 import React from "react";
 import Toolbar from "./components/layout/Toolbar";
-import Footer from "./components/footer/footer";
+import Footer from "./components/layout/Footer";
 import Landing from "./pages/index";
 import Challenges from "./pages/challenges/index";
 import Contact from "./pages/contact";
