@@ -51,11 +51,64 @@ const About: React.FC = () => {
       <Row>
         <Column>
           <TitleText text="Meet our team" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
         </Column>
         <Column>
           <Image
@@ -77,11 +130,64 @@ const About: React.FC = () => {
         </Column>
         <Column>
           <TitleText text="Board of inspiration" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
         </Column>
       </Row>
       <br />
@@ -89,11 +195,64 @@ const About: React.FC = () => {
       <Row>
         <Column>
           <TitleText text="Coaches & experts" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                height="60px"
+                width="60px"
+              />
+              <h4>Name</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
         </Column>
         <Column>
           <Image
@@ -120,7 +279,8 @@ const About: React.FC = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris."
           />
-          <br /><br/>
+          <br />
+          <br />
           <TitleText text="Vision" />
           <BodyText
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -139,4 +299,23 @@ const Wrapper = styled.div`
   padding-top: 100px;
   max-width: 80%;
   margin: auto auto;
+
+  .person_avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      font-family: "Nunito", sans-serif;
+      letter-spacing: 1.5px;
+      line-height: 1.8;
+    }
+    h6 {
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 1.5px;
+      line-height: 1.8;
+      font-weight: 600;
+      color: grey;
+    }
+  }
 `;
