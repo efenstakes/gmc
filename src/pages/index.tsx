@@ -1,5 +1,5 @@
 import React from "react";
-import { Page, Partners } from "../components/styled_components";
+import { Page } from "../components/styled_components";
 import TitleText from "../components/common/TitleText";
 import BodyText from "../components/common/BodyText";
 import WhiteTitleText from "../components/common/WhiteTitleText";
