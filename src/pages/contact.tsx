@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Page } from "../components/styled_components";
 import Row from "../components/layout/Row";
 import Column from "../components/layout/Column";
@@ -8,13 +9,18 @@ import Button from "../components/common/Button";
 import TextField from "../components/common/TextField";
 import TextArea from "../components/common/TextArea";
 
+import MobileContact from "./mobile/contact";
+
 const Contact: React.FC = () => {
-  return (
+  return window.screen.width < 740 ? (
+    <MobileContact />
+  ) : (
     <Page>
       <Row>
         <Column>
           <TitleText text="Send us a message" />
-          <br /><br />
+          <br />
+          <br />
           <form className="contact">
             <TextField label="Your name" />
             <br />
@@ -24,7 +30,7 @@ const Contact: React.FC = () => {
             <br />
             <br />
 
-            <Button style={{width: "100%"}} text="Send" />
+            <Button style={{ width: "100%" }} text="Send" />
           </form>
         </Column>
         <Column>
