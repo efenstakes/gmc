@@ -92,7 +92,7 @@ const MobileIndex: React.FC = () => {
           />
         </div>
       </GreyContainer>
-      <br />
+     
       <br />
       <TitleText text="Partners" style={{ textAlign: "center" }} />
       <br />
@@ -157,6 +157,27 @@ const PartnersRow = styled.div`
     height: 15px;
     width: 70px;
   }
+  @media (max-width: 321px) {
+    #bidco {
+      height: 20px;
+      width: 30px;
+    }
+    #klm {
+      height: 20px;
+      width: 25px;
+    }
+    #clarity {
+      height: 15px;
+      width: 50px;
+    }
+    #incentro {
+      height: 10px;
+      width: 50px;
+    }
+    button {
+        font-size: 9px;
+    }
+  }
 `;
 
 const ContentWrap = styled.div`
@@ -164,6 +185,9 @@ const ContentWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  #main_photo {
+    height: 220px;
+  }
 `;
 
 const BlueContainer = styled.div`
