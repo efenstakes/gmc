@@ -8,8 +8,10 @@ import BodyText from "../../components/common/BodyText";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
 
+import MobileChallengesIndex from '../mobile/challenges/index'
+
 const Challenges: React.FC = () => {
-  return (
+  return window.screen.width < 740 ? <MobileChallengesIndex/> : (
     <div>
       <Page>
         <Row>

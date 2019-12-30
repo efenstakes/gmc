@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 type Props = {
   text: any;
+  style?: any;
 };
 
 export default class BlueText extends React.PureComponent<Props> {
   render() {
-    return <Wrapper>{this.props.text}</Wrapper>;
+    return <Wrapper style={this.props.style}>{this.props.text}</Wrapper>;
   }
 }
 
@@ -20,7 +21,7 @@ const Wrapper = styled.p`
   background-color: transparent;
   text-align: left;
   text-decoration: none !important;
-  @media(max-width: 1025px) {
+  @media (max-width: 1025px) {
     font-size: 20px;
   }
   @media (max-width: 768px) {
