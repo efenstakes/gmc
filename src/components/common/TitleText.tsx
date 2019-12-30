@@ -21,4 +21,8 @@ const Wrapper = styled.h1`
   background-color: transparent;
   text-align: left;
   font-size: 28px;
+
+  @media(max-width: 1025px) {
+    font-size: 24px;
+  }
 `;

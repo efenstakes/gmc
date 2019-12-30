@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+
 import { Page } from "../components/styled_components";
 import TitleText from "../components/common/TitleText";
 import BodyText from "../components/common/BodyText";
@@ -17,7 +19,7 @@ import {
 
 const Landing: React.FC = () => {
   return (
-    <div>
+    <PageWrapper>
       <Page>
         {/* top image + welcome text */}
         <Row>
@@ -35,6 +37,7 @@ const Landing: React.FC = () => {
 
           <Column>
             <Image
+              id="main_photo"
               style={{ borderRadius: "10px" }}
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/gmc_home_main_yF8sJ5rVY.png"
               height="350px"
@@ -121,7 +124,7 @@ const Landing: React.FC = () => {
 
       {/* partners section */}
       <WhiteContainer>
-        <TitleText text="Partners" style={{ textAlign: "center"}} />
+        <TitleText text="Partners" style={{ textAlign: "center" }} />
 
         <Row>
           <Image src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png" />
@@ -143,9 +146,17 @@ const Landing: React.FC = () => {
           <Button text="View all" />
         </Row>
       </WhiteContainer>
-    </div>
+    </PageWrapper>
   );
 };
 
 export default Landing;
 
+const PageWrapper = styled.div`
+  @media (max-width: 1025px) {
+    #main_photo {
+      width: 400px;
+      height: 250px;
+    }
+  }
+`;
