@@ -5,7 +5,7 @@ import Button from "../common/Button";
 
 const Toolbar: React.FC = () => {
   return (
-    <Wrapper>
+    <Wrapper id="main_nav">
       <Link to="/">
         <img
           className="logo"

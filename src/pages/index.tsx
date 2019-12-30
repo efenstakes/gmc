@@ -17,8 +17,12 @@ import {
   WhiteContainer
 } from "../components/common/Container";
 
+import MobileIndex from "./mobile/index";
+
 const Landing: React.FC = () => {
-  return (
+  return window.screen.width < 740 ? (
+    <MobileIndex />
+  ) : (
     <PageWrapper>
       <Page>
         {/* top image + welcome text */}
