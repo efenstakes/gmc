@@ -6,7 +6,6 @@ import BodyText from "../../components/common/BodyText";
 import WhiteTitleText from "../../components/common/WhiteTitleText";
 import WhiteBodyText from "../../components/common/WhiteBodyText";
 import BlueText from "../../components/common/BlueText";
-import Row from "../../components/layout/Row";
 import Image from "../../components/common/Image";
 import Button from "../../components/common/Button";
 

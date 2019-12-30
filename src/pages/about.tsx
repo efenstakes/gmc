@@ -7,8 +7,12 @@ import Row from "../components/layout/Row";
 import Column from "../components/layout/Column";
 import Image from "../components/common/Image";
 
+import MobileAbout from "./mobile/about";
+
 const About: React.FC = () => {
-  return (
+  return window.screen.width < 740 ? (
+    <MobileAbout />
+  ) : (
     <Wrapper>
       <Row>
         <Column>
