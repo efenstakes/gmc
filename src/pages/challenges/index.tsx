@@ -1,18 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
-import { GreyContainer } from "../../components/common/Container";
 import { ReasonsToJoin } from "../../components/styled_components";
 import TitleText from "../../components/common/TitleText";
 import BodyText from "../../components/common/BodyText";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
 
-import MobileChallengesIndex from '../mobile/challenges/index'
+import MobileChallengesIndex from "../mobile/challenges/index";
 
 const Challenges: React.FC = () => {
-  return window.screen.width < 740 ? <MobileChallengesIndex/> : (
-    <div>
+  return window.screen.width < 740 ? (
+    <MobileChallengesIndex />
+  ) : (
+    <PageWrapper>
       <Page>
         <Row>
           <Column>
@@ -28,6 +31,7 @@ const Challenges: React.FC = () => {
           </Column>
           <Column>
             <Image
+              id="challenges"
               height="350px"
               width="450px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/challenges_bJA18M2uJ.png"
@@ -35,8 +39,8 @@ const Challenges: React.FC = () => {
           </Column>
         </Row>
       </Page>
-
-      {/* container with reasons to join gmc */}
+      <br />
+      <br />
       <ReasonsToJoin>
         <h2>ANNUAL CHALLENGES</h2>
         <div className="img-row">
@@ -92,8 +96,26 @@ const Challenges: React.FC = () => {
           </div>
         </div>
       </ReasonsToJoin>
-    </div>
+    </PageWrapper>
   );
 };
 
 export default Challenges;
+
+const PageWrapper = styled.div`
+  @media (max-width: 769px) {
+    #challenges {
+      height: 270px;
+      width: 90%;
+    }
+    .img-container {
+      img {
+        height: 130px;
+        width: 130px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+`;
