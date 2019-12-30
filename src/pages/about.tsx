@@ -25,6 +25,7 @@ const About: React.FC = () => {
         </Column>
         <Column>
           <Image
+            id="story"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/story_fIice7cdvs.png"
             height="350px"
             width="85%"
@@ -36,6 +37,7 @@ const About: React.FC = () => {
       <Row>
         <Column>
           <Image
+            id="why_us"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/whyus_PwCNnry6H.png"
             height="350px"
             width="85%"
@@ -116,6 +118,7 @@ const About: React.FC = () => {
         </Column>
         <Column>
           <Image
+            id="team"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/team_oBOy6foBN.png"
             height="350px"
             width="85%"
@@ -127,6 +130,7 @@ const About: React.FC = () => {
       <Row>
         <Column>
           <Image
+            id="inspiration"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/inspirationboard_VrM4zAP9l.png"
             height="350px"
             width="85%"
@@ -260,6 +264,7 @@ const About: React.FC = () => {
         </Column>
         <Column>
           <Image
+            id="coaches"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/coaches_ccjejDNkO.png"
             height="350px"
             width="85%"
@@ -271,6 +276,7 @@ const About: React.FC = () => {
       <Row>
         <Column>
           <Image
+            id="mission"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/mission_gkvuHTB94.png"
             height="450px"
             width="75%"
@@ -320,6 +326,35 @@ const Wrapper = styled.div`
       line-height: 1.8;
       font-weight: 600;
       color: grey;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    #story,
+    #why_us,
+    #team,
+    #inspiration {
+      height: 250px;
+    }
+    #coaches {
+      height: 300px;
+    }
+    #mission {
+      height: 350px;
+    }
+  }
+  @media (max-width: 769px) {
+    #story,
+    #why_us,
+    #team,
+    #inspiration {
+      height: 200px;
+    }
+    #coaches {
+      height: 250px;
+    }
+    #mission {
+      height: 320px;
     }
   }
 `;
