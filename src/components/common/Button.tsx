@@ -44,4 +44,8 @@ const Wrapper = styled.button`
     font-size: 14px;
     padding: 5px 15px;
   }
+  @media (max-width: 500px) {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
 `;

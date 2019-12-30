@@ -22,10 +22,13 @@ const Wrapper = styled.h1`
   text-align: left;
   font-size: 28px;
 
-  @media(max-width: 1025px) {
+  @media (max-width: 1025px) {
     font-size: 24px;
   }
   @media (max-width: 768px) {
     font-size: 21px;
+  }
+  @media (max-width: 500px) {
+    text-align: center;
   }
 `;

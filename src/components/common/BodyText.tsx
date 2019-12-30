@@ -26,4 +26,7 @@ const Wrapper = styled.span`
   @media (max-width: 768px) {
     font-size: 10px;
   }
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
