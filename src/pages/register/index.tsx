@@ -1,8 +1,11 @@
 import React from "react";
+
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
 import Button from "../../components/common/Button";
 import TitleText from "../../components/common/TitleText";
+
+import MobileRegisterIndex from "../mobile/register/index";
 
 export default class RegisterIndex extends React.Component {
   private buttonStyle = {
@@ -10,7 +13,9 @@ export default class RegisterIndex extends React.Component {
     height: "80px"
   };
   render() {
-    return (
+    return window.screen.width < 740 ? (
+      <MobileRegisterIndex />
+    ) : (
       <Page>
         <TitleText
           style={{ textAlign: "center" }}
