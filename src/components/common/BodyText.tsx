@@ -23,4 +23,7 @@ const Wrapper = styled.span`
   @media(max-width: 1025px) {
     font-size: 12px;
   }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 `;

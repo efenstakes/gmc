@@ -6,6 +6,9 @@ const Row = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 export default Row;

@@ -25,6 +25,9 @@ export const GreyContainer = styled.div`
   div {
     background-color: transparent;
   }
+  @media (max-width: 769px) {
+    padding: 50px 80px;
+  }
 `;
 
 export const WhiteContainer = styled.div`

@@ -127,18 +127,24 @@ const Landing: React.FC = () => {
         <TitleText text="Partners" style={{ textAlign: "center" }} />
 
         <Row>
-          <Image src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png" />
           <Image
+            id="bidco"
+            src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
+          />
+          <Image
+            id="klm"
             height="60px"
             width="60px"
             src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
           />
           <Image
+            id="clarity"
             height="40px"
             width="120px"
             src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
           />
           <Image
+            id="incentro"
             height="25px"
             width="120px"
             src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
@@ -157,6 +163,28 @@ const PageWrapper = styled.div`
     #main_photo {
       width: 400px;
       height: 250px;
+    }
+  }
+  @media (max-width: 769px) {
+    #main_photo {
+      width: 300px;
+      height: 180px;
+    }
+    #bidco {
+      height: 30px;
+      width: 50px;
+    }
+    #klm {
+      height: 30px;
+      width: 40px;
+    }
+    #incentro {
+      height: 20px;
+      width: 80px;
+    }
+    #clarity {
+      height: 30px;
+      width: 80px;
     }
   }
 `;

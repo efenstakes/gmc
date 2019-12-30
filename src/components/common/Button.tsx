@@ -39,4 +39,9 @@ const Wrapper = styled.button`
     background: #4f7cbd;
     color: white;
   }
+
+  @media (max-width: 769px) {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
 `;

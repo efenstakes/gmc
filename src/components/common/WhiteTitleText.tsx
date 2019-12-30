@@ -20,5 +20,8 @@ const Wrapper = styled.span`
   background-color: transparent;
   text-align: left;
   text-decoration: none !important;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 

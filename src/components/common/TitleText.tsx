@@ -25,4 +25,7 @@ const Wrapper = styled.h1`
   @media(max-width: 1025px) {
     font-size: 24px;
   }
+  @media (max-width: 768px) {
+    font-size: 21px;
+  }
 `;
