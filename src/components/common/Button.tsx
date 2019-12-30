@@ -23,23 +23,18 @@ export default class Button extends React.Component<Props> {
 
 const Wrapper = styled.button`
   font-family: "Nunito", sans-serif;
-  border: 2px solid black;
+  border: 2px solid #4f7cbd;
   background-color: white;
   border-radius: 10px;
-  color: black;
   padding: 10px 25px;
   font-size: 17px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-
-  border-color: #4f7cbd;
   color: #4f7cbd;
-
   :hover {
     background: #4f7cbd;
     color: white;
   }
-
   @media (max-width: 769px) {
     font-size: 14px;
     padding: 5px 15px;

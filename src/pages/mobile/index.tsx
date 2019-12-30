@@ -131,7 +131,7 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 100px 0;
+  padding: 30px 0;
 `;
 
 const PartnersRow = styled.div`

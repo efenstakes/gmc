@@ -21,7 +21,7 @@ const MobileRegisterIndex: React.FC = () => {
         <br />
         <br />
         <Button text="Company application" />
-        <br/>
+        <br />
         <Button text="Wildcard application" />
       </ContentWrap>
     </PageWrapper>
@@ -34,8 +34,7 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 100px 0;
-  
+  padding: 30px 0;
 `;
 
 const ContentWrap = styled.div`
@@ -59,14 +58,14 @@ const ContentWrap = styled.div`
     font-weight: 600;
   }
   button {
-      width: 70vw;
-      font-size: 14px;
-      padding: 15px 15px;
+    width: 70vw;
+    font-size: 14px;
+    padding: 15px 15px;
   }
 
-  @media(max-width: 321px) {
-      h3 {
-          font-size: 14px;
-      }
+  @media (max-width: 321px) {
+    h3 {
+      font-size: 14px;
+    }
   }
 `;

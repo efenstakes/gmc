@@ -18,22 +18,22 @@ const Toolbar: React.FC = () => {
         <ul className="nav_links">
           <Link to="/">
             <li>
-              <a>HOME</a>
+              <a>Home</a>
             </li>
           </Link>
           <Link to="/challenges">
             <li>
-              <a>CHALLENGES</a>
+              <a>Challenges</a>
             </li>
           </Link>
           <Link to="/about">
             <li>
-              <a>ABOUT US</a>
+              <a>About us</a>
             </li>
           </Link>
           <Link to="/contact">
             <li>
-              <a>TALK TO US</a>
+              <a>Talk to us</a>
             </li>
           </Link>
         </ul>
@@ -66,8 +66,8 @@ const Wrapper = styled.div`
   }
   .logo {
     cursor: pointer;
-    height: 50px;
-    width: 80px;
+    height: 40px;
+    width: 50px;
   }
 
   .nav_links {
@@ -85,5 +85,28 @@ const Wrapper = styled.div`
 
   .nav_links li a:hover {
     color: #0088a9;
+  }
+
+  @media (max-width: 500px) {
+    .nav_links li {
+      display: inline-block;
+      padding: 0px 5px;
+    }
+    li,
+    a {
+      font-size: 8px;
+      letter-spacing: 1px;
+    }
+    .logo {
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+    }
+    button {
+      border: 1px solid #4f7cbd;
+      font-size: 8px;
+      padding: 2px 2px;
+      border-radius: 5px;
+    }
   }
 `;
