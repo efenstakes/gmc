@@ -12,3 +12,6 @@
     box-sizing: border-box;
   }
   
+  #chat-widget {
+    background-color: transparent;
+  }

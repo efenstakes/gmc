@@ -31,11 +31,6 @@ const Toolbar: React.FC = () => {
               <a>About us</a>
             </li>
           </Link>
-          <Link to="/contact">
-            <li>
-              <a>Talk to us</a>
-            </li>
-          </Link>
         </ul>
       </nav>
       <Button text="Sign up" route="/register" />
