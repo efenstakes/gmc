@@ -8,6 +8,8 @@ import Challenges from "./pages/challenges/index";
 import About from "./pages/about";
 import RegisterIndex from "./pages/register/index";
 import NotFound from "./pages/404";
+import CompanyApplication from "./pages/register/company"
+import WildcardApplication from "./pages/register/wilcard"
 
 import "./App.css";
 
@@ -21,6 +23,8 @@ const App: React.FC = () => {
           <Route path="/challenges" exact component={Challenges} />
           <Route path="/about" exact component={About} />
           <Route path="/register" exact component={RegisterIndex} />
+          <Route path="/company" exact component={CompanyApplication} />
+          <Route path="/wilcard" exact component={WildcardApplication} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />
           <Route render={() => <NotFound />} />
         </Switch>

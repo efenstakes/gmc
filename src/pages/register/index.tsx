@@ -1,17 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+import Popup from "reactjs-popup";
 
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
-import Button from "../../components/common/Button";
 import TitleText from "../../components/common/TitleText";
+import Button from "../../components/common/Button"
 
 import MobileRegisterIndex from "../mobile/register/index";
 
 export default class RegisterIndex extends React.Component {
-  private buttonStyle = {
-    width: "35vw",
-    height: "80px"
-  };
+
+  // button style
+  buttonStyle = {
+    height: "85px",
+    width: "35vw"
+  }
   render() {
     return window.screen.width < 740 ? (
       <MobileRegisterIndex />
@@ -30,8 +34,8 @@ export default class RegisterIndex extends React.Component {
         <br />
         <br />
         <Row>
-          <Button text="Company application" style={this.buttonStyle} />
-          <Button text="Wildcard application" style={this.buttonStyle} />
+          <Button text="Company application" style={this.buttonStyle} route="/company" />
+          <Button text="Wilcard application" style={this.buttonStyle} route="/wildcard" />
         </Row>
       </Page>
     );

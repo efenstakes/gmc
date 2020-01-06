@@ -6,6 +6,7 @@ type Props = {
   id?: any;
   route?: any;
   style?: any;
+  className?: any;
   text: string;
 };
 
@@ -13,7 +14,11 @@ export default class Button extends React.Component<Props> {
   render() {
     return (
       <Link to={this.props.route}>
-        <Wrapper style={this.props.style} id={this.props.id}>
+        <Wrapper
+          className={this.props.className}
+          style={this.props.style}
+          id={this.props.id}
+        >
           {this.props.text}
         </Wrapper>
       </Link>

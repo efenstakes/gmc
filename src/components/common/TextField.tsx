@@ -4,12 +4,13 @@ import BodyText from "./BodyText";
 
 type Props = {
   label?: any;
+  className?: any;
 };
 
 export default class TextField extends React.Component<Props> {
   render() {
     return (
-      <Wrapper>
+      <Wrapper className={this.props.className}>
         <label>
           <BodyText text={this.props.label} />
         </label>

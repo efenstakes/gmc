@@ -143,6 +143,9 @@ export const Page = styled.div`
     color: #4f7cbd;
     font-weight: 600;
   }
+  .popup-content {
+    border-radius: 20px;
+  }
 `;
 
 //full height page wrapper
