@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Popup from "reactjs-popup";
 
 import { Page } from "../components/styled_components";
 import TitleText from "../components/common/TitleText";
@@ -10,7 +11,6 @@ import BlueText from "../components/common/BlueText";
 import Column from "../components/layout/Column";
 import Row from "../components/layout/Row";
 import Image from "../components/common/Image";
-import Button from "../components/common/Button";
 import {
   BlueContainer,
   GreyContainer,
@@ -20,6 +20,34 @@ import {
 import MobileIndex from "./mobile/index";
 
 const Landing: React.FC = () => {
+  //partners modal content
+  const modalContent: any = (
+    <ModalWrapper>
+      <Image
+        id="bidco"
+        src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
+      />
+      <Image
+        id="klm"
+        height="60px"
+        width="60px"
+        src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
+      />
+      <Image
+        id="clarity"
+        height="40px"
+        width="120px"
+        src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
+      />
+      <Image
+        id="incentro"
+        height="25px"
+        width="120px"
+        src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
+      />
+    </ModalWrapper>
+  );
+
   return window.screen.width < 740 ? (
     <MobileIndex />
   ) : (
@@ -153,7 +181,9 @@ const Landing: React.FC = () => {
             width="120px"
             src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
           />
-          <Button text="View all" />
+          <Popup modal trigger={<PopupBtn>View all</PopupBtn>}>
+            {modalContent}
+          </Popup>
         </Row>
       </WhiteContainer>
     </PageWrapper>
@@ -191,4 +221,43 @@ const PageWrapper = styled.div`
       width: 80px;
     }
   }
+  .popup-content {
+    border-radius: 20px;
+  }
+`;
+
+const PopupBtn = styled.button`
+  font-family: "Nunito", sans-serif;
+  border: 2px solid #4f7cbd;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #4f7cbd;
+  :hover {
+    background: #4f7cbd;
+    color: white;
+  }
+  @media (max-width: 769px) {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  @media (max-width: 500px) {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+`;
+
+const ModalWrapper = styled.div`
+  background-color: white;
+  * {
+    background-color: transparent;
+  }
+  display: flex;
+  flex-low: row wrap;
+  justify-content: space-between;
+  padding: 40px 40px;
+  align-items: center;
 `;
