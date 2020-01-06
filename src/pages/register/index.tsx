@@ -1,6 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-import Popup from "reactjs-popup";
 
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
