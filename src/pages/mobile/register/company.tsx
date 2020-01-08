@@ -8,7 +8,6 @@ import TextField from "../../../components/common/TextField";
 import Button from "../../../components/common/Button";
 import { GreyContainer } from "../../../components/common/Container";
 import Row from "../../../components/layout/Row";
-import TextArea from "../../../components/common/TextArea";
 
 const MobileCompanyApplication: React.FC = () => {
   return (

@@ -10,10 +10,13 @@ import TextField from "../../components/common/TextField";
 import { GreyContainer } from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
+import MobileWildcardApplication from "../mobile/register/wildcard";
 
 export default class WildcardApplication extends React.Component {
   render() {
-    return (
+    return window.screen.width < 740 ? (
+      <MobileWildcardApplication />
+    ) : (
       <PageWrapper>
         <Wrapper>
           <Row>
@@ -118,7 +121,12 @@ export default class WildcardApplication extends React.Component {
           <br />
           <Row>
             <Button id="apply" className="final-btns" text="Apply" />
-            <Button route="/register" id="cancel" className="final-btns" text="Cancel" />
+            <Button
+              route="/register"
+              id="cancel"
+              className="final-btns"
+              text="Cancel"
+            />
           </Row>
         </Wrapper>
       </PageWrapper>
