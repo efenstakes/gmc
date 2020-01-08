@@ -26,6 +26,16 @@
         "https://testaccountmg623.ngdesk.com/widgets/chat/5e0abd2c6b7f2d0001918fbb/chat_widget.js";
       document.getElementsByTagName("head")[0].appendChild(script);
     </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_lTtviYMdfm3OlqQIzPOTd"); // Obtain your user ID at the dashboard https://dashboard.emailjs.com/integration
+      })();
+    </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

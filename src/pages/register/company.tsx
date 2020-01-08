@@ -10,6 +10,7 @@ import TextField from "../../components/common/TextField";
 import { GreyContainer } from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
+import MyForm from "../../components/form"
 
 export default class CompanyApplication extends React.Component {
   render() {
@@ -120,6 +121,7 @@ export default class CompanyApplication extends React.Component {
             <Button id="apply" className="final-btns" text="Apply" />
             <Button id="cancel" className="final-btns" text="Cancel" />
           </Row>
+          {/* <MyForm /> */}
         </Wrapper>
       </PageWrapper>
     );

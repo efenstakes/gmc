@@ -26,7 +26,7 @@ const App: React.FC = () => {
           <Route path="/company" exact component={CompanyApplication} />
           <Route path="/wildcard" exact component={WildcardApplication} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />
-          <Route render={() => <NotFound />} />
+          <Route render={() => <Landing />} />
         </Switch>
         {/* <Footer /> */}
       </BrowserRouter>
