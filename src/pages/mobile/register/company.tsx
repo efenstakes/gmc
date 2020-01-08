@@ -5,6 +5,10 @@ import TitleText from "../../../components/common/TitleText";
 import BodyText from "../../../components/common/BodyText";
 import Image from "../../../components/common/Image";
 import TextField from "../../../components/common/TextField";
+import Button from "../../../components/common/Button";
+import { GreyContainer } from "../../../components/common/Container";
+import Row from "../../../components/layout/Row";
+import TextArea from "../../../components/common/TextArea";
 
 const MobileCompanyApplication: React.FC = () => {
   return (
@@ -40,6 +44,58 @@ const MobileCompanyApplication: React.FC = () => {
         <br />
         <TextField className="textfield" label="Phone number" />
       </ContentWrap>
+      <br />
+      <br />
+      <GreyContainer>
+        <Row>
+          <Image
+            src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/picture_TDcyD9g7o.png"
+            height="100px"
+            width="50px"
+          />
+          <Button text="Upload your picture" />
+        </Row>
+        <br />
+        <Row>
+          <Image
+            src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/cv_o_IH3BSf9.png"
+            height="100px"
+            width="50px"
+          />
+          <Button text="Upload your CV" />
+        </Row>
+      </GreyContainer>
+
+      <ContentWrap>
+        <TextFieldCol>
+          <TitleText
+            style={{ textAlign: "center" }}
+            text="Accountabiliy partner details (should be your current employer)"
+          />
+          <br />
+          <br />
+          <TextField className="textfield" label="E-mail address" />
+          <br />
+          <TextField className="textfield" label="Phone number" />
+          <br />
+          <TextField
+            className="textfield"
+            label="What do you expect of the Great Minds Challenge?"
+          />
+          <br />
+          <br />
+          <Button id="apply" className="final-btns" text="Apply" />
+          <br />
+          <Button
+            route="/register"
+            id="cancel"
+            className="final-btns"
+            text="Cancel"
+          />
+        </TextFieldCol>
+      </ContentWrap>
+      <br />
+      <br />
     </PageWrapper>
   );
 };
@@ -50,15 +106,44 @@ const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 50px 0;
   .textfield {
     width: 80vw;
+  }
+  .final-btns {
+    height: 50px;
+    width: 60vw;
+  }
+  #apply,
+  #cancel {
+    font-size: 17px;
+  }
+  #apply {
+    border: 2px solid green;
+    color: green;
+    :hover {
+      background: green;
+      color: white;
+    }
+    }
+    #cancel {
+        border: 2px solid red;
+    color: red;
+    :hover {
+      background: red;
+      color: white;
   }
 `;
 
 const ContentWrap = styled.div`
   padding: 50px 5%;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const TextFieldCol = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

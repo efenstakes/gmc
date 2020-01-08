@@ -4,6 +4,7 @@ import BodyText from "./BodyText";
 
 type Props = {
   label?: any;
+  className?: any;
 };
 
 export default class TextArea extends React.Component<Props> {
@@ -13,7 +14,7 @@ export default class TextArea extends React.Component<Props> {
         <label>
           <BodyText text={this.props.label} />
         </label>
-        <textarea rows={12}></textarea>
+        <textarea className={this.props.className} rows={12}></textarea>
       </Wrapper>
     );
   }
