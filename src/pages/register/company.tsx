@@ -10,11 +10,15 @@ import TextField from "../../components/common/TextField";
 import { GreyContainer } from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
-import MyForm from "../../components/form"
+import MobileCompanyApplication from "../mobile/register/company";
+
+// import MyForm from "../../components/form"
 
 export default class CompanyApplication extends React.Component {
   render() {
-    return (
+    return window.screen.width < 740 ? (
+      <MobileCompanyApplication />
+    ) : (
       <PageWrapper>
         <Wrapper>
           <Row>
@@ -119,7 +123,12 @@ export default class CompanyApplication extends React.Component {
           <br />
           <Row>
             <Button id="apply" className="final-btns" text="Apply" />
-            <Button route="/register" id="cancel" className="final-btns" text="Cancel" />
+            <Button
+              route="/register"
+              id="cancel"
+              className="final-btns"
+              text="Cancel"
+            />
           </Row>
           {/* <MyForm /> */}
         </Wrapper>

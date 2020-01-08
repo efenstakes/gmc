@@ -20,9 +20,9 @@ const MobileRegisterIndex: React.FC = () => {
         <br />
         <br />
         <br />
-        <Button text="Company application" />
+        <Button route="/company" text="Company application" />
         <br />
-        <Button text="Wildcard application" />
+        <Button route="/wildcard" text="Wildcard application" />
       </ContentWrap>
     </PageWrapper>
   );
