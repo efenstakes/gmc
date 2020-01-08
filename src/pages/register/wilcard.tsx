@@ -118,7 +118,7 @@ export default class WildcardApplication extends React.Component {
           <br />
           <Row>
             <Button id="apply" className="final-btns" text="Apply" />
-            <Button id="cancel" className="final-btns" text="Cancel" />
+            <Button route="/register" id="cancel" className="final-btns" text="Cancel" />
           </Row>
         </Wrapper>
       </PageWrapper>

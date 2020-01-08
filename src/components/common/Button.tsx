@@ -7,6 +7,7 @@ type Props = {
   route?: any;
   style?: any;
   className?: any;
+  onClick?: any;
   text: string;
 };
 
@@ -15,6 +16,7 @@ export default class Button extends React.Component<Props> {
     return (
       <Link to={this.props.route}>
         <Wrapper
+          onClick={this.props.onClick}
           className={this.props.className}
           style={this.props.style}
           id={this.props.id}

@@ -119,7 +119,7 @@ export default class CompanyApplication extends React.Component {
           <br />
           <Row>
             <Button id="apply" className="final-btns" text="Apply" />
-            <Button id="cancel" className="final-btns" text="Cancel" />
+            <Button route="/register" id="cancel" className="final-btns" text="Cancel" />
           </Row>
           {/* <MyForm /> */}
         </Wrapper>
