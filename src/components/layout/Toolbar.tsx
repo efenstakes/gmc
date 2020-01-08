@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
 import Button from "../common/Button";
+
+import MobileDrawer from "../mobile/drawer";
 
 const Toolbar: React.FC = () => {
   return (
-    <Wrapper id="main_nav">
+    <Wrapper>
       <Link to="/">
         <img
           className="logo"

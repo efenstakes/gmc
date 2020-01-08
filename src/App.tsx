@@ -7,10 +7,9 @@ import Landing from "./pages/index";
 import Challenges from "./pages/challenges/index";
 import About from "./pages/about";
 import RegisterIndex from "./pages/register/index";
-import NotFound from "./pages/404";
+// import NotFound from "./pages/404";
 import CompanyApplication from "./pages/register/company"
 import WildcardApplication from "./pages/register/wilcard"
-
 import "./App.css";
 
 const App: React.FC = () => {
