@@ -23,28 +23,62 @@ const Landing: React.FC = () => {
   //partners modal content
   const modalContent: any = (
     <ModalWrapper>
-      <Image
-        id="bidco"
-        src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
-      />
-      <Image
-        id="klm"
-        height="60px"
-        width="60px"
-        src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
-      />
-      <Image
-        id="clarity"
-        height="40px"
-        width="120px"
-        src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
-      />
-      <Image
-        id="incentro"
-        height="25px"
-        width="120px"
-        src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
-      />
+      <TitleText text="All our partners" style={{ textAlign: "center" }} />
+      <PartnersRow>
+        <Image
+          id="bidco"
+          height="50px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
+        />
+        <Image
+          id="klm"
+          height="60px"
+          width="60px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
+        />
+        <Image
+          id="clarity"
+          height="40px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
+        />
+      </PartnersRow>
+
+      <PartnersRow>
+        <Image
+          id="mp"
+          height="70px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/mp_logo_cnJizAy-6.png"
+        />
+        <Image
+          id="usiu"
+          height="70px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/usiu_logo_tN3QnOGc1.png"
+        />
+        <Image
+          id="barens"
+          height="50px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/barens_h44fUSLxf.jpg"
+        />
+      </PartnersRow>
+
+      <PartnersRow>
+        <Image
+          id="incentro"
+          height="25px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
+        />
+        <Image
+          id="soulco"
+          height="40px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/soulco_nAnhkBRxU.jpg"
+        />
+      </PartnersRow>
     </ModalWrapper>
   );
 
@@ -256,7 +290,18 @@ const ModalWrapper = styled.div`
     background-color: transparent;
   }
   display: flex;
-  flex-low: row wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px;
+`;
+
+const PartnersRow = styled.div`
+  background-color: white;
+  * {
+    background-color: transparent;
+  }
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 40px 40px;
   align-items: center;
