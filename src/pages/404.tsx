@@ -3,23 +3,47 @@ import styled from "styled-components";
 
 import Image from "../components/common/Image";
 import TitleText from "../components/common/TitleText";
-import Button from "../components/common/Button";
 
 const NotFound: React.FC = () => {
   return (
     <Wrapper>
       <Image
-        src="https://ik.imagekit.io/sgmianze96/portfolio/Isometrics/404_H6rAC8Kwc.svg"
+        src="https://ik.imagekit.io/sgmianze96/assets/illustrations/under-construction_7iivCQv6r.svg"
         height="350px"
         width="90%"
       />
       <br />
+      <br />
+      <br />
       <TitleText
         style={{ textAlign: "center" }}
-        text="Ooops. This page does not exist"
+        text="This website is currently under development. Check back soon!"
       />
-      
-      <Button text="Go back" route="/" />
+      <br />
+
+      <SocialLinksWrapper>
+        <a href="https://www.facebook.com/GMCNairobi/" target="_blank">
+          <img
+            alt="Facebook"
+            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/facebook_hwKdAopIi.svg"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/school/greatmindsnairobi/"
+          target="_blank"
+        >
+          <img
+            alt="linkedin"
+            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/linkedin_7bxeG15wZQ.svg"
+          />
+        </a>
+        <a href="mailto:info@greatmindsnairobi.org" target="_blank">
+          <img
+            alt="email"
+            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/google-gmail_gRFMGKEW09.svg"
+          />
+        </a>
+      </SocialLinksWrapper>
     </Wrapper>
   );
 };
@@ -27,15 +51,11 @@ const NotFound: React.FC = () => {
 export default NotFound;
 
 const Wrapper = styled.div`
-  padding: 10% 120px;
+  margin: auto auto;
+  padding: 2.5% 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  button {
-    margin-top: 40px;
-    width: 60vw;
-  }
-
   @media (max-width: 740px) {
     padding: 30% 20px;
     display: flex;
@@ -43,11 +63,42 @@ const Wrapper = styled.div`
     align-items: center;
     img {
       width: 90%;
-      height: 20vh;
+      height: 30vh;
     }
     h1 {
       text-align: center;
       margin-bottom: 30px;
     }
+  }
+`;
+
+const SocialLinksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
+  img {
+    margin: 2rem;
+    height: 36px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    :hover {
+      visibility: visible;
+    }
+  }
+  @media (max-width: 1024px) {
+    padding: 0 10rem;
+  }
+  @media (max-width: 768px) {
+    padding: 0 5rem;
+  }
+  @media (max-width: 450px) {
+    padding: 0 2rem;
+    img {
+      height: 18px;
+    }
+  }
+  @media (max-width: 320px) {
+    padding: 0 0.5rem;
   }
 `;
