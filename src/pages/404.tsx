@@ -22,7 +22,11 @@ const NotFound: React.FC = () => {
       <br />
 
       <SocialLinksWrapper>
-        <a href="https://www.facebook.com/GMCNairobi/" target="_blank">
+        <a
+          href="https://www.facebook.com/GMCNairobi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             alt="Facebook"
             src="https://ik.imagekit.io/sgmianze96/assets/social_icons/facebook_hwKdAopIi.svg"
@@ -31,13 +35,18 @@ const NotFound: React.FC = () => {
         <a
           href="https://www.linkedin.com/school/greatmindsnairobi/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             alt="linkedin"
             src="https://ik.imagekit.io/sgmianze96/assets/social_icons/linkedin_7bxeG15wZQ.svg"
           />
         </a>
-        <a href="mailto:info@greatmindsnairobi.org" target="_blank">
+        <a
+          href="mailto:info@greatmindsnairobi.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             alt="email"
             src="https://ik.imagekit.io/sgmianze96/assets/social_icons/google-gmail_gRFMGKEW09.svg"
