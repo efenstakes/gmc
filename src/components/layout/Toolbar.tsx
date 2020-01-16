@@ -36,7 +36,7 @@ const Toolbar: React.FC = () => {
           </Link>
         </ul>
       </nav>
-      <Button text="Sign up" route="/register" />
+      <Button id="signup" text="Sign up" route="/register" />
     </Wrapper>
   );
 };
@@ -83,6 +83,18 @@ const Wrapper = styled.div`
 
   .nav_links li a:hover {
     color: #0088a9;
+  }
+
+  #signup {
+    color: white;
+    border: 3px solid #e69500;
+    background-color: #e69500;
+    font-weight: 800;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.19);
+    :hover {
+      background: white;
+      color: #e69500;
+    }
   }
 
   @media (max-width: 500px) {

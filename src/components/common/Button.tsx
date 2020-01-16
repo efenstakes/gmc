@@ -30,7 +30,7 @@ export default class Button extends React.Component<Props> {
 
 const Wrapper = styled.button`
   font-family: "Nunito", sans-serif;
-  border: 2px solid #4f7cbd;
+  border: 3px solid #4f7cbd;
   background-color: white;
   border-radius: 10px;
   padding: 10px 25px;
