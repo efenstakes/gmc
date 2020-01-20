@@ -141,60 +141,58 @@ const About: React.FC = () => {
           <Row>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/ruthie_rono_FnRnN5DxX.jpeg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%"}}
               />
-              <h4>Name</h4>
+              <h4>Ruthie Rono</h4>
+              <h6>Deputy VC USIU-A</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/eddie_sarroukh_jTBfCXFzT.jpeg"
+                height="60px"
+                width="60px"
+                style={{ borderRadius: "50%"}}
+              />
+              <h4>Eddie Sarroukh</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/wahu_kagwi_FjZBA0YlR.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%"}}
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
-            </div>
-            <div className="person_avatar">
-              <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-                height="60px"
-                width="60px"
-              />
-              <h4>Name</h4>
+              <h4>Wahu Kagwi</h4>
               <h6>Position</h6>
             </div>
           </Row>
           <Row>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/vimal_shah_NB82_BJcx.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%"}}
               />
-              <h4>Name</h4>
+              <h4>Vimal Shah</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/jane_ngige_TWpF1BE5M.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%"}}
               />
-              <h4>Name</h4>
+              <h4>Jane Ngige</h4>
               <h6>Position</h6>
             </div>
-            <div className="person_avatar">
-              <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-                height="60px"
-                width="60px"
-              />
-              <h4>Name</h4>
-              <h6>Position</h6>
-            </div>
+
+            <div></div>
           </Row>
         </Column>
       </Row>
