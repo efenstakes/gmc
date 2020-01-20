@@ -206,58 +206,108 @@ const About: React.FC = () => {
           <Row>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/decimar_ogutu_JPJW0MxSL.jpeg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>Decimar Ogutu</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/david_bernard-stevens_odas_jGE8.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>David Bernard-Stevens</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/aart_bos_Z9QDWFTi5.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>Aart Bos</h4>
               <h6>Position</h6>
             </div>
           </Row>
           <Row>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/mart-veeken_6fk15WB7d.jpg"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>Mart Veeken</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/susan-wamae_YsLgO55kh.png"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>Susan Wamae</h4>
               <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
-                src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/dennis_de_weed_nFkBwobYl.png"
                 height="60px"
                 width="60px"
+                style={{ borderRadius: "50%" }}
               />
-              <h4>Name</h4>
+              <h4>Dennis De Weed</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/irene_nchama_nDWrkoF0d.jpg"
+                height="60px"
+                width="60px"
+                style={{ borderRadius: "50%" }}
+              />
+              <h4>Irene Nchama</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/derek_bbanga_WZ26WVBpR.jpg"
+                height="60px"
+                width="60px"
+                style={{ borderRadius: "50%" }}
+              />
+              <h4>Derek Bbanga</h4>
+              <h6>Position</h6>
+            </div>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/sheetal_shah_O2Cu1LH7w.jpeg"
+                height="60px"
+                width="60px"
+                style={{ borderRadius: "50%" }}
+              />
+              <h4>Sheetal Shah</h4>
+              <h6>Position</h6>
+            </div>
+          </Row>
+          <Row>
+            <div className="person_avatar">
+              <Image
+                src="https://ik.imagekit.io/sgmianze96/gmc/coaches/madelon_barens_tqHXxjgI1.jpg"
+                height="60px"
+                width="60px"
+                style={{ borderRadius: "50%" }}
+              />
+              <h4>Madelon Barens</h4>
               <h6>Position</h6>
             </div>
           </Row>
