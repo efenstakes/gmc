@@ -144,7 +144,7 @@ const About: React.FC = () => {
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/ruthie_rono_FnRnN5DxX.jpeg"
                 height="60px"
                 width="60px"
-                style={{ borderRadius: "50%"}}
+                style={{ borderRadius: "50%" }}
               />
               <h4>Ruthie Rono</h4>
               <h6>Deputy VC USIU-A</h6>
@@ -154,7 +154,7 @@ const About: React.FC = () => {
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/eddie_sarroukh_jTBfCXFzT.jpeg"
                 height="60px"
                 width="60px"
-                style={{ borderRadius: "50%"}}
+                style={{ borderRadius: "50%" }}
               />
               <h4>Eddie Sarroukh</h4>
               <h6>Position</h6>
@@ -164,7 +164,7 @@ const About: React.FC = () => {
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/wahu_kagwi_FjZBA0YlR.jpg"
                 height="60px"
                 width="60px"
-                style={{ borderRadius: "50%"}}
+                style={{ borderRadius: "50%" }}
               />
               <h4>Wahu Kagwi</h4>
               <h6>Position</h6>
@@ -176,7 +176,7 @@ const About: React.FC = () => {
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/vimal_shah_NB82_BJcx.jpg"
                 height="60px"
                 width="60px"
-                style={{ borderRadius: "50%"}}
+                style={{ borderRadius: "50%" }}
               />
               <h4>Vimal Shah</h4>
               <h6>Position</h6>
@@ -186,7 +186,7 @@ const About: React.FC = () => {
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/jane_ngige_TWpF1BE5M.jpg"
                 height="60px"
                 width="60px"
-                style={{ borderRadius: "50%"}}
+                style={{ borderRadius: "50%" }}
               />
               <h4>Jane Ngige</h4>
               <h6>Position</h6>
@@ -332,19 +332,11 @@ const About: React.FC = () => {
         </Column>
         <Column>
           <TitleText text="Mission" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <BodyText text="Become the epicenter of inspiration, imapct-challenge & transformative innovation." />
           <br />
           <br />
           <TitleText text="Vision" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <BodyText text="Nurture a new generation of leaders with new mind sets, who will be agents of transformation in businesses & society through innovation, sustainability & future proof breakthoughs for people, planet & prosperity." />
         </Column>
       </Row>
     </Wrapper>
