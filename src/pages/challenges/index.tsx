@@ -18,7 +18,7 @@ const Challenges: React.FC = () => {
     <PageWrapper>
       <Page>
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <TitleText text="Challenges" />
             <BodyText
               text="The Great Minds Challenge is a two-months program
@@ -29,7 +29,7 @@ const Challenges: React.FC = () => {
             generation leaders."
             />
           </Column>
-          <Column>
+          <Column maxWidth="48%"> 
             <Image
               id="challenges"
               height="350px"
