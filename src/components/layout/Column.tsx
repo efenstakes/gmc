@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
-const Column = styled.div`
-  max-width: 50%;
+type Props = {
+  maxWidth?: any;
+};
+
+const Column = styled.div<Props>`
+  max-width: ${p => p.maxWidth};
   display: flex;
   flex-direction: column;
 `;

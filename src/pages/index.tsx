@@ -89,7 +89,7 @@ const Landing: React.FC = () => {
       <Page>
         {/* top image + welcome text */}
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <TitleText text="THE FUTURE IS NOW!" />
             <BodyText
               text="The Great Minds Challenge is a two-months program
@@ -101,7 +101,7 @@ const Landing: React.FC = () => {
             />
           </Column>
 
-          <Column>
+          <Column maxWidth="48%">
             <Image
               id="main_photo"
               style={{ borderRadius: "10px" }}
@@ -133,53 +133,53 @@ const Landing: React.FC = () => {
       {/* container with reasons to join gmc */}
       <GreyContainer>
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <Image
               height="120px"
               width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png"
             />
           </Column>
-          <Column>
+          <Column maxWidth="48%"> 
             <BlueText text="Personal development, systems thinking and coaching." />
           </Column>
         </Row>
 
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <Image
               height="120px"
               width="130px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png"
             />
           </Column>
-          <Column>
+          <Column maxWidth="48%">
             <BlueText text="Experience creativity techniques and how to continuously innovate." />
           </Column>
         </Row>
 
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <Image
               height="120px"
               width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png"
             />
           </Column>
-          <Column>
+          <Column maxWidth="48%">
             <BlueText text="Gain knowledge from inspirational & influential leaders." />
           </Column>
         </Row>
 
         <Row>
-          <Column>
+          <Column maxWidth="48%">
             <Image
               height="120px"
               width="170px"
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png"
             />
           </Column>
-          <Column>
+          <Column maxWidth="48%">
             <BlueText
               text="Network, co-create and acquire new mind sets with new generation
               leaders."

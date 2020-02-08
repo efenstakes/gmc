@@ -5,13 +5,15 @@ type Props = {
   height?: any;
   width?: any;
   id?: any;
-  style?: any 
+  style?: any;
+  alt?: any;
 };
 
 export default class Image extends React.Component<Props> {
   render() {
     return (
       <img
+        alt={this.props.alt}
         id={this.props.id}
         src={this.props.src}
         height={this.props.height}
