@@ -15,7 +15,7 @@ const About: React.FC = () => {
   ) : (
     <Wrapper>
       <Row>
-        <Column>
+        <Column maxWidth="48%" minWidth="48%">
           <TitleText text="Our story" />
           <BodyText
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -23,7 +23,7 @@ const About: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris."
           />
         </Column>
-        <Column>
+        <Column maxWidth="48%" minWidth="48%">
           <Image
             id="story"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/story_fIice7cdvs.png"
@@ -35,7 +35,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row>
-        <Column>
+        <Column maxWidth="48%" minWidth="48%">
           <Image
             id="why_us"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/whyus_PwCNnry6H.png"
@@ -43,7 +43,7 @@ const About: React.FC = () => {
             width="85%"
           />
         </Column>
-        <Column>
+        <Column maxWidth="48%" minWidth="48%">
           <TitleText text="Why Great Minds Challenge" />
           <BodyText
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,7 +55,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row>
-        <Column>
+        <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Meet our team" />
           <Row>
             <div className="person_avatar">
@@ -116,7 +116,7 @@ const About: React.FC = () => {
             </div>
           </Row>
         </Column>
-        <Column>
+        <Column maxWidth="34%" minWidth="34%"> 
           <Image
             id="team"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/team_oBOy6foBN.png"
@@ -128,7 +128,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row>
-        <Column>
+        <Column maxWidth="34%" minWidth="34%">
           <Image
             id="inspiration"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/inspirationboard_VrM4zAP9l.png"
@@ -136,7 +136,7 @@ const About: React.FC = () => {
             width="85%"
           />
         </Column>
-        <Column>
+        <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Board of inspiration" />
           <Row>
             <div className="person_avatar">
@@ -199,7 +199,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row>
-        <Column>
+        <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Coaches & experts" />
           <Row>
             <div className="person_avatar">
@@ -310,7 +310,7 @@ const About: React.FC = () => {
             </div>
           </Row>
         </Column>
-        <Column>
+        <Column maxWidth="34%" minWidth="34%">
           <Image
             id="coaches"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/coaches_ccjejDNkO.png"
@@ -322,7 +322,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row>
-        <Column>
+        <Column maxWidth="34%" minWidth="34%">
           <Image
             id="mission"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/mission_gkvuHTB94.png"
@@ -330,7 +330,7 @@ const About: React.FC = () => {
             width="75%"
           />
         </Column>
-        <Column>
+        <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Mission" />
           <BodyText text="Become the epicenter of inspiration, imapct-challenge & transformative innovation." />
           <br />
