@@ -6,7 +6,7 @@ import BodyText from "../../../components/common/BodyText";
 import Image from "../../../components/common/Image";
 import TextField from "../../../components/common/TextField";
 import Button from "../../../components/common/Button";
-import { GreyContainer } from "../../../components/common/Container";
+import Container from "../../../components/common/Container";
 import Row from "../../../components/layout/Row";
 
 const MobileWildcardApplication: React.FC = () => {
@@ -16,7 +16,7 @@ const MobileWildcardApplication: React.FC = () => {
         <TitleText text="Wild card application" />
         <br />
         <Image
-           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/wildcard_GKX0iuiwO.png"
+          src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/wildcard_GKX0iuiwO.png"
           height="180px"
           width="70%"
         />
@@ -45,8 +45,14 @@ const MobileWildcardApplication: React.FC = () => {
       </ContentWrap>
       <br />
       <br />
-      <GreyContainer>
-        <Row>
+      <Container
+        isDefault={false}
+        padding="50px 120px;"
+        flexDirection="column;"
+        justifyContent="space-between;"
+        backgroundColor="#fdfdfd;"
+      >
+        <Row isDefault={true}>
           <Image
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/picture_TDcyD9g7o.png"
             height="100px"
@@ -55,7 +61,7 @@ const MobileWildcardApplication: React.FC = () => {
           <Button text="Upload your picture" />
         </Row>
         <br />
-        <Row>
+        <Row isDefault={true}>
           <Image
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/cv_o_IH3BSf9.png"
             height="100px"
@@ -63,7 +69,7 @@ const MobileWildcardApplication: React.FC = () => {
           />
           <Button text="Upload your CV" />
         </Row>
-      </GreyContainer>
+      </Container>
 
       <ContentWrap>
         <TextFieldCol>

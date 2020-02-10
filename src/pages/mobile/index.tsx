@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Popup from "reactjs-popup";
 
 import TitleText from "../../components/common/TitleText";
 import BodyText from "../../components/common/BodyText";
@@ -7,9 +8,70 @@ import WhiteTitleText from "../../components/common/WhiteTitleText";
 import WhiteBodyText from "../../components/common/WhiteBodyText";
 import BlueText from "../../components/common/BlueText";
 import Image from "../../components/common/Image";
-import Button from "../../components/common/Button";
 
 const MobileIndex: React.FC = () => {
+  //partners modal content
+  const modalContent: any = (
+    <ModalWrapper>
+      <TitleText text="All our partners" style={{ textAlign: "center" }} />
+      <PartnersRow>
+        <Image
+          id="bidco"
+          height="50px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
+        />
+        <Image
+          id="klm"
+          height="60px"
+          width="60px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
+        />
+        <Image
+          id="clarity"
+          height="40px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
+        />
+      </PartnersRow>
+
+      <PartnersRow>
+        <Image
+          id="mp"
+          height="70px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/mp_logo_cnJizAy-6.png"
+        />
+        <Image
+          id="usiu"
+          height="70px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/usiu_logo_tN3QnOGc1.png"
+        />
+        <Image
+          id="barens"
+          height="50px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/barens_h44fUSLxf.jpg"
+        />
+      </PartnersRow>
+
+      <PartnersRow>
+        <Image
+          id="incentro"
+          height="25px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
+        />
+        <Image
+          id="soulco"
+          height="40px"
+          width="120px"
+          src="https://ik.imagekit.io/sgmianze96/gmc/partners/soulco_nAnhkBRxU.jpg"
+        />
+      </PartnersRow>
+    </ModalWrapper>
+  );
+
   return (
     <PageWrapper>
       <ContentWrap>
@@ -91,7 +153,7 @@ const MobileIndex: React.FC = () => {
           />
         </div>
       </GreyContainer>
-     
+
       <br />
       <TitleText text="Partners" style={{ textAlign: "center" }} />
       <br />
@@ -119,7 +181,9 @@ const MobileIndex: React.FC = () => {
           width="120px"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
         />
-        <Button text="View all" />
+        <Popup modal trigger={<PopupBtn>View all</PopupBtn>}>
+          {modalContent}
+        </Popup>
       </PartnersRow>
     </PageWrapper>
   );
@@ -174,7 +238,7 @@ const PartnersRow = styled.div`
       width: 50px;
     }
     button {
-        font-size: 9px;
+      font-size: 9px;
     }
   }
 `;
@@ -219,4 +283,32 @@ const GreyContainer = styled.div`
     background-color: transparent;
     text-align: center;
   }
+`;
+
+const PopupBtn = styled.button`
+  font-family: "Nunito", sans-serif;
+  border: 2px solid #4f7cbd;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #4f7cbd;
+  :hover {
+    background: #4f7cbd;
+    color: white;
+  }
+`;
+
+const ModalWrapper = styled.div`
+  background-color: white;
+  * {
+    background-color: transparent;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 20px;
+  margin: auto auto;
 `;

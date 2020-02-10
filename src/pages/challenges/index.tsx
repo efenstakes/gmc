@@ -17,7 +17,7 @@ const Challenges: React.FC = () => {
   ) : (
     <PageWrapper>
       <Page>
-        <Row>
+         <Row isDefault={true}>
           <Column maxWidth="48%">
             <TitleText text="Challenges" />
             <BodyText

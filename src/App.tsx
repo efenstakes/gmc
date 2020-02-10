@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import Toolbar from "./components/layout/Toolbar";
+import Toolbar from "./components/navigation/Toolbar";
 // import Footer from "./components/layout/Footer";
 import Landing from "./pages/index";
 import Challenges from "./pages/challenges/index";

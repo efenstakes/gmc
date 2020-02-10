@@ -3,17 +3,16 @@ import React from "react";
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
 import TitleText from "../../components/common/TitleText";
-import Button from "../../components/common/Button"
+import Button from "../../components/common/Button";
 
 import MobileRegisterIndex from "../mobile/register/index";
 
 export default class RegisterIndex extends React.Component {
-
   // button style
   buttonStyle = {
     height: "85px",
     width: "35vw"
-  }
+  };
   render() {
     return window.screen.width < 740 ? (
       <MobileRegisterIndex />
@@ -31,9 +30,17 @@ export default class RegisterIndex extends React.Component {
         <br />
         <br />
         <br />
-        <Row>
-          <Button text="Company application" style={this.buttonStyle} route="/company" />
-          <Button text="Wilcard application" style={this.buttonStyle} route="/wildcard" />
+        <Row isDefault={true}>
+          <Button
+            text="Company application"
+            style={this.buttonStyle}
+            route="/company"
+          />
+          <Button
+            text="Wilcard application"
+            style={this.buttonStyle}
+            route="/wildcard"
+          />
         </Row>
       </Page>
     );

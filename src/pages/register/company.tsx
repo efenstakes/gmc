@@ -7,7 +7,7 @@ import Row from "../../components/layout/Row";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
 import TextField from "../../components/common/TextField";
-import { GreyContainer } from "../../components/common/Container";
+import Container from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
 import MobileCompanyApplication from "../mobile/register/company";
@@ -21,8 +21,8 @@ export default class CompanyApplication extends React.Component {
     ) : (
       <PageWrapper>
         <Wrapper>
-          <Row>
-            <Column>
+          <Row isDefault={true}>
+            <Column maxWidth="48%" minWidth="48%">
               <TitleText text="Company application" />
               <br />
               <BodyText
@@ -34,7 +34,7 @@ export default class CompanyApplication extends React.Component {
              generation leaders."
               />
             </Column>
-            <Column>
+            <Column maxWidth="48%" minWidth="48%">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/company_HVk3lf4WdG.png"
                 height="350px"
@@ -67,7 +67,13 @@ export default class CompanyApplication extends React.Component {
         <br />
         <br />
         <br />
-        <GreyContainer>
+        <Container
+          isDefault={false}
+          padding="50px 120px;"
+          flexDirection="column;"
+          justifyContent="space-between;"
+          backgroundColor="#fdfdfd;"
+        >
           <UploadRow>
             <Column>
               <Image
@@ -91,7 +97,7 @@ export default class CompanyApplication extends React.Component {
               <Button text="Upload your CV" />
             </Column>
           </UploadRow>
-        </GreyContainer>
+        </Container>
         <br />
         <br />
         <Wrapper>
@@ -121,7 +127,7 @@ export default class CompanyApplication extends React.Component {
           <br />
           <br />
           <br />
-          <Row>
+          <Row isDefault={true}>
             <Button id="apply" className="final-btns" text="Apply" />
             <Button
               route="/register"

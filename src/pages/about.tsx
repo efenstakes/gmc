@@ -14,7 +14,7 @@ const About: React.FC = () => {
     <MobileAbout />
   ) : (
     <Wrapper>
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="48%" minWidth="48%">
           <TitleText text="Our story" />
           <BodyText
@@ -34,7 +34,7 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="48%" minWidth="48%">
           <Image
             id="why_us"
@@ -54,18 +54,16 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Meet our team" />
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -73,8 +71,6 @@ const About: React.FC = () => {
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -82,19 +78,15 @@ const About: React.FC = () => {
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
           </Row>
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -102,8 +94,6 @@ const About: React.FC = () => {
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -111,12 +101,10 @@ const About: React.FC = () => {
                 height="60px"
                 width="60px"
               />
-              <h4>Name</h4>
-              <h6>Position</h6>
             </div>
           </Row>
         </Column>
-        <Column maxWidth="34%" minWidth="34%"> 
+        <Column maxWidth="34%" minWidth="34%">
           <Image
             id="team"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/team_oBOy6foBN.png"
@@ -127,7 +115,7 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="34%" minWidth="34%">
           <Image
             id="inspiration"
@@ -138,7 +126,7 @@ const About: React.FC = () => {
         </Column>
         <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Board of inspiration" />
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/ruthie_rono_FnRnN5DxX.jpeg"
@@ -146,8 +134,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Ruthie Rono</h4>
-              <h6>Deputy VC USIU-A</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -156,8 +142,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Eddie Sarroukh</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -166,11 +150,9 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Wahu Kagwi</h4>
-              <h6>Position</h6>
             </div>
           </Row>
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/vimal_shah_NB82_BJcx.jpg"
@@ -178,8 +160,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Vimal Shah</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -188,9 +168,8 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Jane Ngige</h4>
-              <h6>Position</h6>
             </div>
+            <div></div>
 
             <div></div>
           </Row>
@@ -198,10 +177,10 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="55%" minWidth="55%">
           <TitleText text="Coaches & experts" />
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/coaches/decimar_ogutu_JPJW0MxSL.jpeg"
@@ -209,8 +188,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Decimar Ogutu</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -219,8 +196,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>David Bernard-Stevens</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -229,11 +204,9 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Aart Bos</h4>
-              <h6>Position</h6>
             </div>
           </Row>
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/coaches/mart-veeken_6fk15WB7d.jpg"
@@ -241,8 +214,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Mart Veeken</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -251,8 +222,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Susan Wamae</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -261,11 +230,9 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Dennis De Weed</h4>
-              <h6>Position</h6>
             </div>
           </Row>
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/coaches/irene_nchama_nDWrkoF0d.jpg"
@@ -273,8 +240,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Irene Nchama</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -283,8 +248,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Derek Bbanga</h4>
-              <h6>Position</h6>
             </div>
             <div className="person_avatar">
               <Image
@@ -293,11 +256,9 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Sheetal Shah</h4>
-              <h6>Position</h6>
             </div>
           </Row>
-          <Row>
+          <Row isDefault={true}>
             <div className="person_avatar">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/coaches/madelon_barens_tqHXxjgI1.jpg"
@@ -305,8 +266,6 @@ const About: React.FC = () => {
                 width="60px"
                 style={{ borderRadius: "50%" }}
               />
-              <h4>Madelon Barens</h4>
-              <h6>Position</h6>
             </div>
           </Row>
         </Column>
@@ -321,7 +280,7 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row isDefault={true}>
         <Column maxWidth="34%" minWidth="34%">
           <Image
             id="mission"
@@ -355,18 +314,6 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    h4 {
-      font-family: "Nunito", sans-serif;
-      letter-spacing: 1.5px;
-      line-height: 1.8;
-    }
-    h6 {
-      font-family: "Open Sans", sans-serif;
-      letter-spacing: 1.5px;
-      line-height: 1.8;
-      font-weight: 600;
-      color: grey;
-    }
   }
 
   @media (max-width: 1025px) {

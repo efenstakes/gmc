@@ -7,7 +7,7 @@ import Row from "../../components/layout/Row";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
 import TextField from "../../components/common/TextField";
-import { GreyContainer } from "../../components/common/Container";
+import Container from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
 import MobileWildcardApplication from "../mobile/register/wildcard";
@@ -19,8 +19,8 @@ export default class WildcardApplication extends React.Component {
     ) : (
       <PageWrapper>
         <Wrapper>
-          <Row>
-            <Column>
+          <Row isDefault={true}>
+            <Column maxWidth="48%" minWidth="48%">
               <TitleText text="Wild card application" />
               <br />
               <BodyText
@@ -32,7 +32,7 @@ export default class WildcardApplication extends React.Component {
              generation leaders."
               />
             </Column>
-            <Column>
+            <Column maxWidth="48%" minWidth="48%">
               <Image
                 src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/wildcard_GKX0iuiwO.png"
                 height="350px"
@@ -65,7 +65,13 @@ export default class WildcardApplication extends React.Component {
         <br />
         <br />
         <br />
-        <GreyContainer>
+        <Container
+          isDefault={false}
+          padding="50px 120px;"
+          flexDirection="column;"
+          justifyContent="space-between;"
+          backgroundColor="#fdfdfd;"
+        >
           <UploadRow>
             <Column>
               <Image
@@ -89,7 +95,7 @@ export default class WildcardApplication extends React.Component {
               <Button text="Upload your CV" />
             </Column>
           </UploadRow>
-        </GreyContainer>
+        </Container>
         <br />
         <br />
         <Wrapper>
@@ -119,7 +125,7 @@ export default class WildcardApplication extends React.Component {
           <br />
           <br />
           <br />
-          <Row>
+          <Row isDefault={true}>
             <Button id="apply" className="final-btns" text="Apply" />
             <Button
               route="/register"

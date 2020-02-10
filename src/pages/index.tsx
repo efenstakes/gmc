@@ -11,11 +11,7 @@ import BlueText from "../components/common/BlueText";
 import Column from "../components/layout/Column";
 import Row from "../components/layout/Row";
 import Image from "../components/common/Image";
-import {
-  BlueContainer,
-  GreyContainer,
-  WhiteContainer
-} from "../components/common/Container";
+import Container from "../components/common/Container";
 
 import MobileIndex from "./mobile/index";
 
@@ -88,7 +84,7 @@ const Landing: React.FC = () => {
     <PageWrapper>
       <Page>
         {/* top image + welcome text */}
-        <Row>
+        <Row isDefault={true}>
           <Column maxWidth="48%">
             <TitleText text="THE FUTURE IS NOW!" />
             <BodyText
@@ -113,9 +109,17 @@ const Landing: React.FC = () => {
         </Row>
       </Page>
 
-      {/* container with highlighted text */}
-
-      <BlueContainer>
+      {/* blue container with highlighted text */}
+      <Container
+        isDefault={false}
+        padding="20px 20px;"
+        flexDirection="row;"
+        verticalAlign="middle;"
+        justifyContent="space-around;"
+        backgroundColor="#4f7cbd;"
+        textAlign="center;"
+        alignItems="center;"
+      >
         <div>
           <WhiteTitleText text="45" />
           <WhiteBodyText text="Participants to date" />
@@ -128,11 +132,17 @@ const Landing: React.FC = () => {
           <WhiteTitleText text="10" />
           <WhiteBodyText text="Social impact wildcards" />
         </div>
-      </BlueContainer>
+      </Container>
 
-      {/* container with reasons to join gmc */}
-      <GreyContainer>
-        <Row>
+      {/* grey container with reasons to join gmc */}
+      <Container
+        isDefault={false}
+        padding="50px 120px;"
+        flexDirection="column;"
+        justifyContent="space-between;"
+        backgroundColor="#fdfdfd;"
+      >
+        <Row isDefault={true}>
           <Column maxWidth="48%">
             <Image
               height="120px"
@@ -140,12 +150,12 @@ const Landing: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png"
             />
           </Column>
-          <Column maxWidth="48%"> 
+          <Column maxWidth="48%">
             <BlueText text="Personal development, systems thinking and coaching." />
           </Column>
         </Row>
 
-        <Row>
+        <Row isDefault={true}>
           <Column maxWidth="48%">
             <Image
               height="120px"
@@ -158,7 +168,7 @@ const Landing: React.FC = () => {
           </Column>
         </Row>
 
-        <Row>
+        <Row isDefault={true}>
           <Column maxWidth="48%">
             <Image
               height="120px"
@@ -171,7 +181,7 @@ const Landing: React.FC = () => {
           </Column>
         </Row>
 
-        <Row>
+        <Row isDefault={true}>
           <Column maxWidth="48%">
             <Image
               height="120px"
@@ -186,13 +196,13 @@ const Landing: React.FC = () => {
             />
           </Column>
         </Row>
-      </GreyContainer>
+      </Container>
 
-      {/* partners section */}
-      <WhiteContainer>
+      {/* white container partners section */}
+      <Container isDefault={true} flexDirection="column">
         <TitleText text="Partners" style={{ textAlign: "center" }} />
 
-        <Row>
+        <Row isDefault={true}>
           <Image
             id="bidco"
             src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
@@ -219,7 +229,7 @@ const Landing: React.FC = () => {
             {modalContent}
           </Popup>
         </Row>
-      </WhiteContainer>
+      </Container>
     </PageWrapper>
   );
 };

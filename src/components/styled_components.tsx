@@ -1,28 +1,5 @@
 import styled from "styled-components";
 
-//section of the page with blue background
-export const BlueContainer = styled.div`
-  font-family: "Nunito", sans-serif;
-  padding: 40px 20px;
-  display: flex;
-  flex-flow: row wrap;
-  vertical-align: middle;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #4f7cbd;
-  h3 {
-    margin-bottom: 5px;
-    font-size: 36px;
-  }
-  div,
-  p,
-  h3 {
-    color: white;
-    background-color: transparent;
-  }
-`;
-
 //section with reasons to join
 export const ReasonsToJoin = styled.div`
   font-family: "Nunito", sans-serif;
@@ -85,40 +62,6 @@ export const ReasonsToJoin = styled.div`
   }
 `;
 
-//section with partners
-export const Partners = styled.div`
-  font-family: "Nunito", sans-serif;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    color: #4f7cbd;
-    letter-spacing: 1.5px;
-  }
-  .partners-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    div {
-      margin: 0 70px;
-    }
-    #klm {
-      height: 60px;
-      width: 60px;
-    }
-    #clarity {
-      height: 40px;
-      width: 120px;
-    }
-    #incentro {
-      height: 25px;
-      width: 120px;
-    }
-  }
-`;
-
 //page wrapper
 export const Page = styled.div`
   padding-top: 100px;
@@ -147,15 +90,3 @@ export const Page = styled.div`
     border-radius: 20px;
   }
 `;
-
-//full height page wrapper
-export const Wrapper = styled.div`
-  position: relative;
-  min-height: 100vh;
-  margin-top: 50px;
-
-  #content-wrap {
-    padding-bottom: 60px;
-  }
-`;
-

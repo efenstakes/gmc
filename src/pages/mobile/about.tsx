@@ -50,15 +50,13 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -66,8 +64,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -75,19 +71,15 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -95,8 +87,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -104,8 +94,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
       </ContentWrap>
@@ -119,15 +107,13 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -135,8 +121,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -144,19 +128,15 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -164,8 +144,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -173,8 +151,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
       </ContentWrap>
@@ -188,15 +164,13 @@ const MobileAbout: React.FC = () => {
           width="60%"
         />
         <br />
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -204,8 +178,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -213,19 +185,15 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
-        <Row>
+        <Row isDefault={true}>
           <div className="person_avatar">
             <Image
               src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -233,8 +201,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
           <div className="person_avatar">
             <Image
@@ -242,8 +208,6 @@ const MobileAbout: React.FC = () => {
               height="35px"
               width="35px"
             />
-            <h4>Name</h4>
-            <h6>Position</h6>
           </div>
         </Row>
       </ContentWrap>

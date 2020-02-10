@@ -1,40 +1,28 @@
 import styled from "styled-components";
 
+type Props = {
+  isDefault: boolean;
+  flexDirection?: any;
+  justifyContent?: any;
+  padding?: any;
+  backgroundColor?: any;
+  alignItems?: any;
+  verticalAlign?: any;
+  textAlign?: any;
+};
 
-export const BlueContainer = styled.div`
-  padding: 20px 20px;
+const Container = styled.div<Props>`
   display: flex;
-  flex-flow: row wrap;
-  vertical-align: middle;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #4f7cbd;
+  flex-direction: ${p => p.flexDirection};
+  justify-content: ${p => (p.isDefault ? "space-around;" : p.justifyContent)};
+  align-items: ${p => p.alignItems};
+  vertical-align: ${p => p.verticalAlign};
+  padding: ${p => (p.isDefault ? "40px 120px;" : p.padding)};
+  background-color: ${p => (p.isDefault ? "white;" : p.backgroundColor)};
+  text-align: ${p => p.textAlign};
   * {
     background-color: transparent;
   }
 `;
 
-export const GreyContainer = styled.div`
-  font-family: "Nunito", sans-serif;
-  padding: 50px 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #fdfdfd;
-  * {
-    background-color: transparent;
-  }
-  @media (max-width: 769px) {
-    padding: 50px 80px;
-  }
-`;
-
-export const WhiteContainer = styled.div`
-  padding: 40px 120px;
-  display: flex;
-  flex-direction: column;
-  * {
-    background-color: transparent;
-  }
-`;
+export default Container;
