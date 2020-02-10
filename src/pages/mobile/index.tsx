@@ -185,6 +185,10 @@ const MobileIndex: React.FC = () => {
           {modalContent}
         </Popup>
       </PartnersRow>
+      <br />
+      <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };
