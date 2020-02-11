@@ -10,12 +10,19 @@ import Image from "../components/common/Image";
 import MobileAbout from "./mobile/about";
 
 const About: React.FC = () => {
+  //default width of columns
+  const colWidth: string = "40%";
+
+  //default image height and width
+  const imgHeight: string = "300px";
+  const imgWidth: string = "85%";
+
   return window.screen.width < 740 ? (
     <MobileAbout />
   ) : (
     <Wrapper>
       <Row isDefault={true}>
-        <Column maxWidth="48%" minWidth="48%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <TitleText text="Our story" />
           <BodyText
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -23,27 +30,27 @@ const About: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris."
           />
         </Column>
-        <Column maxWidth="48%" minWidth="48%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="story"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/story_fIice7cdvs.png"
-            height="350px"
-            width="85%"
+            height={imgHeight}
+            width={imgWidth}
           />
         </Column>
       </Row>
       <br />
       <br />
       <Row isDefault={true}>
-        <Column maxWidth="48%" minWidth="48%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="why_us"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/whyus_PwCNnry6H.png"
-            height="350px"
-            width="85%"
+            height={imgHeight}
+            width={imgWidth}
           />
         </Column>
-        <Column maxWidth="48%" minWidth="48%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <TitleText text="Why Great Minds Challenge" />
           <BodyText
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,7 +62,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row isDefault={true}>
-        <Column maxWidth="55%" minWidth="55%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <TitleText text="Meet our team" />
           <Row isDefault={true}>
             <div className="person_avatar">
@@ -104,24 +111,24 @@ const About: React.FC = () => {
             </div>
           </Row>
         </Column>
-        <Column maxWidth="34%" minWidth="34%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="team"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/team_oBOy6foBN.png"
-            height="350px"
-            width="85%"
+            height={imgHeight}
+            width={imgWidth}
           />
         </Column>
       </Row>
       <br />
       <br />
       <Row isDefault={true}>
-        <Column maxWidth="34%" minWidth="34%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="inspiration"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/inspirationboard_VrM4zAP9l.png"
-            height="350px"
-            width="85%"
+            height={imgHeight}
+            width={imgWidth}
           />
         </Column>
         <Column maxWidth="55%" minWidth="55%">
@@ -178,7 +185,7 @@ const About: React.FC = () => {
       <br />
       <br />
       <Row isDefault={true}>
-        <Column maxWidth="55%" minWidth="55%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <TitleText text="Coaches & experts" />
           <Row isDefault={true}>
             <div className="person_avatar">
@@ -269,27 +276,27 @@ const About: React.FC = () => {
             </div>
           </Row>
         </Column>
-        <Column maxWidth="34%" minWidth="34%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="coaches"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/coaches_ccjejDNkO.png"
-            height="350px"
-            width="85%"
+            height={imgHeight}
+            width={imgWidth}
           />
         </Column>
       </Row>
       <br />
       <br />
       <Row isDefault={true}>
-        <Column maxWidth="34%" minWidth="34%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
             id="mission"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/mission_gkvuHTB94.png"
-            height="450px"
+            height="420px"
             width="75%"
           />
         </Column>
-        <Column maxWidth="55%" minWidth="55%">
+        <Column maxWidth={colWidth} minWidth={colWidth}>
           <TitleText text="Mission" />
           <BodyText text="Become the epicenter of inspiration, imapct-challenge & transformative innovation." />
           <br />
