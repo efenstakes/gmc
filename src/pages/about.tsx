@@ -305,6 +305,10 @@ const About: React.FC = () => {
           <BodyText text="Nurture a new generation of leaders with new mind sets, who will be agents of transformation in businesses & society through innovation, sustainability & future proof breakthoughs for people, planet & prosperity." />
         </Column>
       </Row>
+      <br />
+      <br />
+      <br />
+      <br />
     </Wrapper>
   );
 };

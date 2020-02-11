@@ -90,6 +90,10 @@ const MobileChallengesIndex: React.FC = () => {
           <br />
         </div>
       </GreyContainer>
+      <br />
+      <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };

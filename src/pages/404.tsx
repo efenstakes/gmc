@@ -20,6 +20,10 @@ const NotFound: React.FC = () => {
       />
       
       <Button text="Go back" route="/" />
+      <br />
+      <br />
+      <br />
+      <br />
     </Wrapper>
   );
 };

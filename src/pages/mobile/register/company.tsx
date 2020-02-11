@@ -101,6 +101,8 @@ const MobileCompanyApplication: React.FC = () => {
       </ContentWrap>
       <br />
       <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };

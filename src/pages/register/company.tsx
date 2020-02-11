@@ -138,6 +138,10 @@ export default class CompanyApplication extends React.Component {
           </Row>
           {/* <MyForm /> */}
         </Wrapper>
+        <br />
+        <br />
+        <br />
+        <br />
       </PageWrapper>
     );
   }

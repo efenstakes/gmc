@@ -233,6 +233,10 @@ const MobileAbout: React.FC = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris."
         />
       </ContentWrap>
+      <br />
+      <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };

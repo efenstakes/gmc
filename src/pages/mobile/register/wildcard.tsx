@@ -101,6 +101,8 @@ const MobileWildcardApplication: React.FC = () => {
       </ContentWrap>
       <br />
       <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };

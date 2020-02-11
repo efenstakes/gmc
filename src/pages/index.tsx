@@ -230,6 +230,10 @@ const Landing: React.FC = () => {
           </Popup>
         </Row>
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
     </PageWrapper>
   );
 };
