@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BodyText from "./BodyText";
+import Text from "./Text";
 
 type Props = {
   label?: any;
@@ -12,7 +12,7 @@ export default class TextArea extends React.Component<Props> {
     return (
       <Wrapper>
         <label>
-          <BodyText text={this.props.label} />
+        <Text isBody>{this.props.label}</Text>
         </label>
         <textarea className={this.props.className} rows={12}></textarea>
       </Wrapper>
