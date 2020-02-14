@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import Image from "../components/common/Image";
-import TitleText from "../components/common/TitleText";
+import Text from "../components/common/Text";
+import Button from "../components/common/Button";
 
 const NotFound: React.FC = () => {
   return (
@@ -13,46 +14,15 @@ const NotFound: React.FC = () => {
         width="90%"
       />
       <br />
-      <br />
-      <br />
-      <TitleText
-        style={{ textAlign: "center" }}
-        text="This website is currently under development. Check back soon!"
-      />
-      <br />
+      <Text isTitle textAlign="center !important">
+        Ooops. This page does not exist.
+      </Text>
 
-      <SocialLinksWrapper>
-        <a
-          href="https://www.facebook.com/GMCNairobi/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            alt="Facebook"
-            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/facebook_hwKdAopIi.svg"
-          />
-        </a>
-        <a
-          href="https://www.linkedin.com/school/greatmindsnairobi/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            alt="linkedin"
-            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/linkedin_7bxeG15wZQ.svg"
-          />
-        </a>
-        <a
-          href="mailto:info@greatmindsnairobi.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            alt="email"
-            src="https://ik.imagekit.io/sgmianze96/assets/social_icons/google-gmail_gRFMGKEW09.svg"
-          />
-        </a>
-      </SocialLinksWrapper>
+      <Button text="Go back" route="/" />
+      <br />
+      <br />
+      <br />
+      <br />
     </Wrapper>
   );
 };
