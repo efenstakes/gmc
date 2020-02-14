@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import TitleText from "../../components/common/TitleText";
-import BodyText from "../../components/common/BodyText";
+import Text from "../../components/common/Text";
 import Image from "../../components/common/Image";
 import Row from "../../components/layout/Row";
 
@@ -10,7 +9,7 @@ const MobileAbout: React.FC = () => {
   return (
     <PageWrapper>
       <ContentWrap>
-        <TitleText text="Our story" />
+        <Text isTitle>Our story</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/story_fIice7cdvs.png"
@@ -18,15 +17,15 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <BodyText
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-        />
+        <Text isBody>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </Text>
       </ContentWrap>
 
       <ContentWrap>
-        <TitleText text="Why Great Minds Challenge" />
+        <Text isTitle>Why Great Minds Challenge</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/whyus_PwCNnry6H.png"
@@ -34,15 +33,15 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <BodyText
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-        />
+        <Text isBody>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </Text>
       </ContentWrap>
 
       <ContentWrap>
-        <TitleText text="Meet our team" />
+        <Text isTitle>Meet our team</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/team_oBOy6foBN.png"
@@ -99,7 +98,7 @@ const MobileAbout: React.FC = () => {
       </ContentWrap>
 
       <ContentWrap>
-        <TitleText text="Board of inspiration" />
+        <Text isTitle>Board of inspiration</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/inspirationboard_VrM4zAP9l.png"
@@ -156,7 +155,7 @@ const MobileAbout: React.FC = () => {
       </ContentWrap>
 
       <ContentWrap>
-        <TitleText text="Coaches & experts" />
+        <Text isTitle>Coaches & Experts</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/coaches_ccjejDNkO.png"
@@ -213,7 +212,7 @@ const MobileAbout: React.FC = () => {
       </ContentWrap>
 
       <ContentWrap>
-        <TitleText text="Mission & Vision" />
+        <Text isTitle>Mission & Vision</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/mission_gkvuHTB94.png"
@@ -221,17 +220,17 @@ const MobileAbout: React.FC = () => {
           width="50%"
         />
         <br />
-        <BodyText
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-        />
+        <Text isBody>
+          Become the epicenter of inspiration, imapct-challenge & transformative
+          innovation.
+        </Text>
         <br />
-        <BodyText
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-        />
+        <Text isBody>
+          Nurture a new generation of leaders with new mind sets, who will be
+          agents of transformation in businesses & society through innovation,
+          sustainability & future proof breakthoughs for people, planet &
+          prosperity.
+        </Text>
       </ContentWrap>
       <br />
       <br />
