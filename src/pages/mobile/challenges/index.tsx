@@ -33,63 +33,67 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>Induction</Text>
           </div>
-          <br />
+          <br /><br/>
 
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>3-day challenge</Text>
           </div>
-          <br />
+          <br /><br/>
 
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>Commencement</Text>
           </div>
           <br />
+          <br/>
         </div>
 
         <Text isTitle>In-house</Text>
+        <br/>
         <div className="img-col">
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>Induction</Text>
           </div>
-          <br />
+          <br /> <br/>
 
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>3-day challenge</Text>
           </div>
-          <br />
+          <br /> <br/>
 
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
+            <br/>
             <Text isBlue>Commencement</Text>
           </div>
           <br />
         </div>
       </GreyContainer>
-      <br />
-      <br />
-      <br />
-      <br />
     </PageWrapper>
   );
 };
