@@ -4,6 +4,7 @@ import Popup from "reactjs-popup";
 
 import Text from "../../components/common/Text";
 import Image from "../../components/common/Image";
+import Container from "../../components/common/Container";
 
 const MobileIndex: React.FC = () => {
   //partners modal content
@@ -94,16 +95,24 @@ const MobileIndex: React.FC = () => {
       <BlueContainer>
         <div>
           <Text isWhiteTitle>45</Text>
+          <br />
           <Text isWhiteBody>Participants to date</Text>
         </div>
+        <br />
+        <br />
         <div>
           <Text isWhiteTitle>15</Text>
+          <br />
           <Text isWhiteBody>Participating companies</Text>
         </div>
+        <br />
+        <br />
         <div>
           <Text isWhiteTitle>10</Text>
+          <br />
           <Text isWhiteBody>Social impact wildcards</Text>
         </div>
+        <br />
       </BlueContainer>
 
       <GreyContainer>
@@ -113,9 +122,11 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png"
           />
+          <br />
           <Text isBlue>
             Personal development, systems thinking and coaching.
           </Text>
+          <br />
         </div>
         <br />
         <br />
@@ -125,9 +136,11 @@ const MobileIndex: React.FC = () => {
             width="120px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png"
           />
+          <br />
           <Text isBlue>
             Experience creativity techniques and how to continuously innovate.
           </Text>
+          <br />
         </div>
         <br />
         <br />
@@ -137,6 +150,7 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png"
           />
+          <br />
           <Text isBlue>
             Gain knowledge from inspirational & influential leaders.
           </Text>
@@ -149,6 +163,7 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png"
           />
+          <br/>
           <Text isBlue>
             Network, co-create and acquire new mind sets with new generation
             leaders.

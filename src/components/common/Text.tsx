@@ -58,7 +58,7 @@ const Text = styled.span<Props>`
   @media (max-width: 768px) {
     font-size: ${p =>
       p.isTitle || p.isWhiteTitle
-        ? "32px;"
+        ? "22px;"
         : p.isBlue
         ? "16px;"
         : p.isWhiteBody
