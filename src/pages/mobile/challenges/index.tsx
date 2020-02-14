@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-import TitleText from "../../../components/common/TitleText";
-import BodyText from "../../../components/common/BodyText";
-import BlueText from "../../../components/common/BlueText";
+import Text from "../../../components/common/Text";
 import Image from "../../../components/common/Image";
 
 const MobileChallengesIndex: React.FC = () => {
   return (
     <PageWrapper>
       <ContentWrap>
-        <TitleText text="Challenges" />
+        <Text isTitle>Challenges</Text>
         <br />
         <Image
           height="250px"
@@ -19,17 +17,15 @@ const MobileChallengesIndex: React.FC = () => {
         />
         <br />
         <br />
-        <BodyText
-          text="The Great Minds Challenge is a two-months program
-            which will culminate with a three-day high-powered
-            challenge. The most innovative global thinkers,
-            entrepreneurs and scholars will be brought together
-            under one program to enable the formation of the new
-            generation leaders."
-        />
+        <Text isBody>
+          The Great Minds Challenge is a two-months program which will culminate
+          with a three-day high-powered challenge. The most innovative global
+          thinkers, entrepreneurs and scholars will be brought together under
+          one program to enable the formation of the new generation leaders.
+        </Text>
       </ContentWrap>
       <GreyContainer>
-        <TitleText text="Annual challenges" />
+        <Text isTitle>Annual challenges</Text>
         <br />
         <div className="img-col">
           <div className="img-container">
@@ -37,7 +33,7 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="Induction" />
+            <Text isBlue>Induction</Text>
           </div>
           <br />
 
@@ -46,7 +42,7 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="3-day challenge" />
+            <Text isBlue>3-day challenge</Text>
           </div>
           <br />
 
@@ -55,19 +51,19 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="Commencement" />
+            <Text isBlue>Commencement</Text>
           </div>
           <br />
         </div>
 
-        <TitleText text="In-house" />
+        <Text isTitle>In-house</Text>
         <div className="img-col">
           <div className="img-container">
             <img
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="Induction" />
+            <Text isBlue>Induction</Text>
           </div>
           <br />
 
@@ -76,7 +72,7 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="3-day challenge" />
+            <Text isBlue>3-day challenge</Text>
           </div>
           <br />
 
@@ -85,7 +81,7 @@ const MobileChallengesIndex: React.FC = () => {
               src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
               alt=""
             />
-            <BlueText text="Commencement" />
+            <Text isBlue>Commencement</Text>
           </div>
           <br />
         </div>
