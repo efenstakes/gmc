@@ -26,7 +26,7 @@ const Text = styled.span<Props>`
       : "black;"};
   font-size: ${p =>
     p.isTitle || p.isWhiteTitle
-      ? "32px;"
+      ? "28px;"
       : p.isBlue
       ? "24px;"
       : p.isWhiteBody

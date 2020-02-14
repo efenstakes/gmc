@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import TitleText from "../components/common/TitleText";
-import BodyText from "../components/common/BodyText";
+import Text from "../components/common/Text";
 import Row from "../components/layout/Row";
 import Column from "../components/layout/Column";
 import Image from "../components/common/Image";
@@ -23,12 +22,12 @@ const About: React.FC = () => {
     <Wrapper>
       <Row isDefault={true}>
         <Column maxWidth={colWidth} minWidth={colWidth}>
-          <TitleText text="Our story" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <Text isTitle>Our story</Text>
+          <Text isBody>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </Text>
         </Column>
         <Column maxWidth={colWidth} minWidth={colWidth}>
           <Image
@@ -51,19 +50,19 @@ const About: React.FC = () => {
           />
         </Column>
         <Column maxWidth={colWidth} minWidth={colWidth}>
-          <TitleText text="Why Great Minds Challenge" />
-          <BodyText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris."
-          />
+          <Text isTitle>Why Great Minds Challenge</Text>
+          <Text isBody>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </Text>
         </Column>
       </Row>
       <br />
       <br />
       <Row isDefault={true}>
         <Column maxWidth={colWidth} minWidth={colWidth}>
-          <TitleText text="Meet our team" />
+          <Text isTitle>Meet our team</Text>
           <Row isDefault={true}>
             <div className="person_avatar">
               <Image
@@ -132,7 +131,7 @@ const About: React.FC = () => {
           />
         </Column>
         <Column maxWidth="55%" minWidth="55%">
-          <TitleText text="Board of inspiration" />
+          <Text isTitle>Board of inspiration</Text>
           <Row isDefault={true}>
             <div className="person_avatar">
               <Image
@@ -186,7 +185,7 @@ const About: React.FC = () => {
       <br />
       <Row isDefault={true}>
         <Column maxWidth={colWidth} minWidth={colWidth}>
-          <TitleText text="Coaches & experts" />
+          <Text isTitle>Coaches & Experts</Text>
           <Row isDefault={true}>
             <div className="person_avatar">
               <Image
@@ -297,12 +296,20 @@ const About: React.FC = () => {
           />
         </Column>
         <Column maxWidth={colWidth} minWidth={colWidth}>
-          <TitleText text="Mission" />
-          <BodyText text="Become the epicenter of inspiration, imapct-challenge & transformative innovation." />
+          <Text isTitle>Mission</Text>
+          <Text isBody>
+            Become the epicenter of inspiration, imapct-challenge &
+            transformative innovation.
+          </Text>
           <br />
           <br />
-          <TitleText text="Vision" />
-          <BodyText text="Nurture a new generation of leaders with new mind sets, who will be agents of transformation in businesses & society through innovation, sustainability & future proof breakthoughs for people, planet & prosperity." />
+          <Text isTitle>Vision</Text>
+          <Text isBody>
+            Nurture a new generation of leaders with new mind sets, who will be
+            agents of transformation in businesses & society through innovation,
+            sustainability & future proof breakthoughs for people, planet &
+            prosperity.
+          </Text>
         </Column>
       </Row>
       <br />
