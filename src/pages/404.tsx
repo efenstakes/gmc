@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Image from "../components/common/Image";
-import TitleText from "../components/common/TitleText";
+import Text from "../components/common/Text";
 import Button from "../components/common/Button";
 
 const NotFound: React.FC = () => {
@@ -14,11 +14,10 @@ const NotFound: React.FC = () => {
         width="90%"
       />
       <br />
-      <TitleText
-        style={{ textAlign: "center" }}
-        text="Ooops. This page does not exist"
-      />
-      
+      <Text isTitle textAlign="center !important">
+        Ooops. This page does not exist.
+      </Text>
+
       <Button text="Go back" route="/" />
       <br />
       <br />
