@@ -2,18 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import Popup from "reactjs-popup";
 
-import TitleText from "../../components/common/TitleText";
-import BodyText from "../../components/common/BodyText";
-import WhiteTitleText from "../../components/common/WhiteTitleText";
-import WhiteBodyText from "../../components/common/WhiteBodyText";
-import BlueText from "../../components/common/BlueText";
+import Text from "../../components/common/Text";
 import Image from "../../components/common/Image";
 
 const MobileIndex: React.FC = () => {
   //partners modal content
   const modalContent: any = (
     <ModalWrapper>
-      <TitleText text="All our partners" style={{ textAlign: "center" }} />
+      <Text isTitle textAlign="center !important">
+        All our partners
+      </Text>
       <PartnersRow>
         <Image
           id="bidco"
@@ -75,7 +73,7 @@ const MobileIndex: React.FC = () => {
   return (
     <PageWrapper>
       <ContentWrap>
-        <TitleText text="THE FUTURE IS NOW!" />
+        <Text isTitle>THE FUTURE IS NOW!</Text>
         <br />
         <Image
           id="main_photo"
@@ -85,28 +83,26 @@ const MobileIndex: React.FC = () => {
           width="80%"
         />
         <br />
-        <BodyText
-          text="The Great Minds Challenge is a two-months program
-             which will culminate with a three-day high-powered
-             challenge. The most innovative global thinkers,
-             entrepreneurs and scholars will be brought together
-             under one program to enable the formation of the new
-             generation leaders."
-        />
+        <Text isBody>
+          The Great Minds Challenge is a two-months program which will culminate
+          with a three-day high-powered challenge. The most innovative global
+          thinkers, entrepreneurs and scholars will be brought together under
+          one program to enable the formation of the new generation leaders.
+        </Text>
       </ContentWrap>
 
       <BlueContainer>
         <div>
-          <WhiteTitleText text="45" />
-          <WhiteBodyText text="Participants to date" />
+          <Text isWhiteTitle>45</Text>
+          <Text isWhiteBody>Participants to date</Text>
         </div>
         <div>
-          <WhiteTitleText text="15" />
-          <WhiteBodyText text="Participating companies" />
+          <Text isWhiteTitle>15</Text>
+          <Text isWhiteBody>Participating companies</Text>
         </div>
         <div>
-          <WhiteTitleText text="10" />
-          <WhiteBodyText text="Social impact wildcards" />
+          <Text isWhiteTitle>10</Text>
+          <Text isWhiteBody>Social impact wildcards</Text>
         </div>
       </BlueContainer>
 
@@ -117,7 +113,9 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/personal_development_JjUGqd8Ly.png"
           />
-          <BlueText text="Personal development, systems thinking and coaching." />
+          <Text isBlue>
+            Personal development, systems thinking and coaching.
+          </Text>
         </div>
         <br />
         <br />
@@ -127,7 +125,9 @@ const MobileIndex: React.FC = () => {
             width="120px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/creativity_XDNpxlBT01.png"
           />
-          <BlueText text="Experience creativity techniques and how to continuously innovate." />
+          <Text isBlue>
+            Experience creativity techniques and how to continuously innovate.
+          </Text>
         </div>
         <br />
         <br />
@@ -137,7 +137,9 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/knowledge_jdFMbHhOT.png"
           />
-          <BlueText text="Gain knowledge from inspirational & influential leaders." />
+          <Text isBlue>
+            Gain knowledge from inspirational & influential leaders.
+          </Text>
         </div>
         <br />
         <br />
@@ -147,15 +149,17 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png"
           />
-          <BlueText
-            text="Network, co-create and acquire new mind sets with new generation
-              leaders."
-          />
+          <Text isBlue>
+            Network, co-create and acquire new mind sets with new generation
+            leaders.
+          </Text>
         </div>
       </GreyContainer>
 
       <br />
-      <TitleText text="Partners" style={{ textAlign: "center" }} />
+      <Text isTitle textAlign="center !important">
+        Partners
+      </Text>
       <br />
 
       <PartnersRow>
