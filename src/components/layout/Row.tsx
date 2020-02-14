@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
+//props to change some layouts
 type Props = {
   isDefault: boolean;
   padding?: any;
   justifyContent?: any;
 };
 
+//pass props to styled component
 const Row = styled.div<Props>`
   padding: ${p => (p.isDefault ? "20px 0;" : p.padding)};
   display: flex;

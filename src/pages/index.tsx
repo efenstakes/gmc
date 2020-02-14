@@ -3,15 +3,11 @@ import styled from "styled-components";
 import Popup from "reactjs-popup";
 
 import { Page } from "../components/styled_components";
-import TitleText from "../components/common/TitleText";
-import BodyText from "../components/common/BodyText";
-import WhiteTitleText from "../components/common/WhiteTitleText";
-import WhiteBodyText from "../components/common/WhiteBodyText";
-import BlueText from "../components/common/BlueText";
 import Column from "../components/layout/Column";
 import Row from "../components/layout/Row";
 import Image from "../components/common/Image";
 import Container from "../components/common/Container";
+import Text from "../components/common/Text";
 
 import MobileIndex from "./mobile/index";
 
@@ -19,7 +15,9 @@ const Landing: React.FC = () => {
   //partners modal content
   const modalContent: any = (
     <ModalWrapper>
-      <TitleText text="All our partners" style={{ textAlign: "center" }} />
+      <Text isTitle textAlign="center !important">
+        All our partners
+      </Text>
       <PartnersRow>
         <Image
           id="bidco"
@@ -86,15 +84,14 @@ const Landing: React.FC = () => {
         {/* top image + welcome text */}
         <Row isDefault={true}>
           <Column maxWidth="48%">
-            <TitleText text="THE FUTURE IS NOW!" />
-            <BodyText
-              text="The Great Minds Challenge is a two-months program
-             which will culminate with a three-day high-powered
-             challenge. The most innovative global thinkers,
-             entrepreneurs and scholars will be brought together
-             under one program to enable the formation of the new
-             generation leaders."
-            />
+            <Text isTitle>THE FUTURE IS NOW!</Text>
+            <Text isBody>
+              The Great Minds Challenge is a two-months program which will
+              culminate with a three-day high-powered challenge. The most
+              innovative global thinkers, entrepreneurs and scholars will be
+              brought together under one program to enable the formation of the
+              new generation leaders.
+            </Text>
           </Column>
 
           <Column maxWidth="48%">
@@ -120,18 +117,38 @@ const Landing: React.FC = () => {
         textAlign="center;"
         alignItems="center;"
       >
-        <div>
-          <WhiteTitleText text="45" />
-          <WhiteBodyText text="Participants to date" />
-        </div>
-        <div>
-          <WhiteTitleText text="15" />
-          <WhiteBodyText text="Participating companies" />
-        </div>
-        <div>
-          <WhiteTitleText text="10" />
-          <WhiteBodyText text="Social impact wildcards" />
-        </div>
+        <Container
+          isDefault={false}
+          flexDirection="column"
+          backgroundColor="transparent"
+          textAlign="center;"
+          alignItems="center;"
+        >
+          <Text isWhiteTitle>45</Text>
+          <Text isWhiteBody>Participants to date</Text>
+        </Container>
+
+        <Container
+          isDefault={false}
+          flexDirection="column"
+          backgroundColor="transparent"
+          textAlign="center;"
+          alignItems="center;"
+        >
+          <Text isWhiteTitle>15</Text>
+          <Text isWhiteBody>Participating companies</Text>
+        </Container>
+
+        <Container
+          isDefault={false}
+          flexDirection="column"
+          backgroundColor="transparent"
+          textAlign="center;"
+          alignItems="center;"
+        >
+          <Text isWhiteTitle>10</Text>
+          <Text isWhiteBody>Social impact wildcards</Text>
+        </Container>
       </Container>
 
       {/* grey container with reasons to join gmc */}
@@ -151,7 +168,9 @@ const Landing: React.FC = () => {
             />
           </Column>
           <Column maxWidth="48%">
-            <BlueText text="Personal development, systems thinking and coaching." />
+            <Text isBlue>
+              Personal development, systems thinking and coaching.
+            </Text>
           </Column>
         </Row>
 
@@ -164,7 +183,9 @@ const Landing: React.FC = () => {
             />
           </Column>
           <Column maxWidth="48%">
-            <BlueText text="Experience creativity techniques and how to continuously innovate." />
+            <Text isBlue>
+              Experience creativity techniques and how to continuously innovate.
+            </Text>
           </Column>
         </Row>
 
@@ -177,7 +198,9 @@ const Landing: React.FC = () => {
             />
           </Column>
           <Column maxWidth="48%">
-            <BlueText text="Gain knowledge from inspirational & influential leaders." />
+            <Text isBlue>
+              Gain knowledge from inspirational & influential leaders.
+            </Text>
           </Column>
         </Row>
 
@@ -190,17 +213,19 @@ const Landing: React.FC = () => {
             />
           </Column>
           <Column maxWidth="48%">
-            <BlueText
-              text="Network, co-create and acquire new mind sets with new generation
-              leaders."
-            />
+            <Text isBlue>
+              Network, co-create and acquire new mind sets with new generation
+              leaders.
+            </Text>
           </Column>
         </Row>
       </Container>
 
       {/* white container partners section */}
       <Container isDefault={true} flexDirection="column">
-        <TitleText text="Partners" style={{ textAlign: "center" }} />
+        <Text isTitle textAlign="center !important">
+          Partners
+        </Text>
 
         <Row isDefault={true}>
           <Image
