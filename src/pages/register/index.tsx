@@ -2,7 +2,7 @@ import React from "react";
 
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
-import TitleText from "../../components/common/TitleText";
+import Text from "../../components/common/Text";
 import Button from "../../components/common/Button";
 
 import MobileRegisterIndex from "../mobile/register/index";
@@ -18,10 +18,9 @@ export default class RegisterIndex extends React.Component {
       <MobileRegisterIndex />
     ) : (
       <Page>
-        <TitleText
-          style={{ textAlign: "center" }}
-          text="Who are we looking for?"
-        />
+        <Text isTitle textAlign="center !important">
+          Who are we looking for?
+        </Text>
         <br />
         <h3>
           Are you a go-getter, a dreamer or a believer? or maybe even a square

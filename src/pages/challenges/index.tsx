@@ -4,8 +4,7 @@ import styled from "styled-components";
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
 import { ReasonsToJoin } from "../../components/styled_components";
-import TitleText from "../../components/common/TitleText";
-import BodyText from "../../components/common/BodyText";
+import Text from "../../components/common/Text";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
 
@@ -17,19 +16,18 @@ const Challenges: React.FC = () => {
   ) : (
     <PageWrapper>
       <Page>
-         <Row isDefault={true}>
+        <Row isDefault={true}>
           <Column maxWidth="48%">
-            <TitleText text="Challenges" />
-            <BodyText
-              text="The Great Minds Challenge is a two-months program
-            which will culminate with a three-day high-powered
-            challenge. The most innovative global thinkers,
-            entrepreneurs and scholars will be brought together
-            under one program to enable the formation of the new
-            generation leaders."
-            />
+            <Text isTitle>Challenges</Text>
+            <Text isBody>
+              The Great Minds Challenge is a two-months program which will
+              culminate with a three-day high-powered challenge. The most
+              innovative global thinkers, entrepreneurs and scholars will be
+              brought together under one program to enable the formation of the
+              new generation leaders.
+            </Text>
           </Column>
-          <Column maxWidth="48%"> 
+          <Column maxWidth="48%">
             <Image
               id="challenges"
               height="350px"

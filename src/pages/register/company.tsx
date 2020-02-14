@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import TitleText from "../../components/common/TitleText";
-import BodyText from "../../components/common/BodyText";
+import Text from "../../components/common/Text";
 import Row from "../../components/layout/Row";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
@@ -23,16 +22,15 @@ export default class CompanyApplication extends React.Component {
         <Wrapper>
           <Row isDefault={true}>
             <Column maxWidth="48%" minWidth="48%">
-              <TitleText text="Company application" />
+              <Text isTitle>Company application</Text>
               <br />
-              <BodyText
-                text="The Great Minds Challenge is a two-months program
-             which will culminate with a three-day high-powered
-             challenge. The most innovative global thinkers,
-             entrepreneurs and scholars will be brought together
-             under one program to enable the formation of the new
-             generation leaders."
-              />
+              <Text isBody>
+                The Great Minds Challenge is a two-months program which will
+                culminate with a three-day high-powered challenge. The most
+                innovative global thinkers, entrepreneurs and scholars will be
+                brought together under one program to enable the formation of
+                the new generation leaders.
+              </Text>
             </Column>
             <Column maxWidth="48%" minWidth="48%">
               <Image
@@ -101,10 +99,9 @@ export default class CompanyApplication extends React.Component {
         <br />
         <br />
         <Wrapper>
-          <TitleText
-            style={{ textAlign: "center" }}
-            text="Accountabiliy partner details (should be your current employer)"
-          />
+          <Text isTitle textAlign="center !important">
+            Accountabiliy partner details (should be your current employer)
+          </Text>
           <br />
           <br />
           <br />
