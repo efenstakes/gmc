@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import TitleText from "../../../components/common/TitleText";
-import BodyText from "../../../components/common/BodyText";
+import Text from "../../../components/common/Text";
 import Image from "../../../components/common/Image";
 import TextField from "../../../components/common/TextField";
 import Button from "../../../components/common/Button";
@@ -13,7 +12,7 @@ const MobileCompanyApplication: React.FC = () => {
   return (
     <PageWrapper>
       <ContentWrap>
-        <TitleText text="Company application" />
+        <Text isTitle>Company application</Text>
         <br />
         <Image
           src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/company_HVk3lf4WdG.png"
@@ -21,14 +20,12 @@ const MobileCompanyApplication: React.FC = () => {
           width="70%"
         />
         <br />
-        <BodyText
-          text="The Great Minds Challenge is a two-months program
-             which will culminate with a three-day high-powered
-             challenge. The most innovative global thinkers,
-             entrepreneurs and scholars will be brought together
-             under one program to enable the formation of the new
-             generation leaders."
-        />
+        <Text isBody>
+          The Great Minds Challenge is a two-months program which will culminate
+          with a three-day high-powered challenge. The most innovative global
+          thinkers, entrepreneurs and scholars will be brought together under
+          one program to enable the formation of the new generation leaders.
+        </Text>
         <br />
         <br />
         <TextField className="textfield" label="Company name" />
@@ -73,10 +70,9 @@ const MobileCompanyApplication: React.FC = () => {
 
       <ContentWrap>
         <TextFieldCol>
-          <TitleText
-            style={{ textAlign: "center" }}
-            text="Accountabiliy partner details (should be your current employer)"
-          />
+          <Text isTitle textAlign="center !important">
+            Accountabiliy partner details (should be your current employer)
+          </Text>
           <br />
           <br />
           <TextField className="textfield" label="E-mail address" />
