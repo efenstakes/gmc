@@ -12,16 +12,14 @@ const MobileIndex: React.FC = () => {
       <Text isTitle textAlign="center !important">
         All our partners
       </Text>
+      <br/>
       <PartnersRow>
         <Image
-          id="bidco"
-          height="50px"
+          height="30rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/bidco_aFGJES6hj.png"
         />
         <Image
-          id="klm"
-          height="60px"
-          width="60px"
+          height="30rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/klm_lzJ-GslBP.svg"
         />
         <Image
@@ -31,39 +29,30 @@ const MobileIndex: React.FC = () => {
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
         />
       </PartnersRow>
-
+      <br />
+      <br />
       <PartnersRow>
         <Image
-          id="mp"
-          height="70px"
-          width="120px"
+          height="30rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/mp_logo_cnJizAy-6.png"
         />
         <Image
-          id="usiu"
-          height="70px"
-          width="120px"
+          height="30rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/usiu_logo_tN3QnOGc1.png"
         />
         <Image
-          id="barens"
-          height="50px"
-          width="120px"
+          height="30rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/barens_h44fUSLxf.jpg"
         />
       </PartnersRow>
-
+<br/><br/>
       <PartnersRow>
         <Image
-          id="incentro"
-          height="25px"
-          width="120px"
+          height="15rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/incenro_Z-BNqzyGA.png"
         />
         <Image
-          id="soulco"
-          height="40px"
-          width="120px"
+          height="15rem"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/soulco_nAnhkBRxU.jpg"
         />
       </PartnersRow>
@@ -162,7 +151,7 @@ const MobileIndex: React.FC = () => {
             width="150px"
             src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/network_v_2x0AEVI.png"
           />
-          <br/>
+          <br />
           <Text isBlue>
             Network, co-create and acquire new mind sets with new generation
             leaders.
@@ -220,7 +209,7 @@ const PageWrapper = styled.div`
   padding: 30px 0;
   .popup-content {
     border-radius: 10px;
-    min-width: 90vw;
+    min-width: 95vw;
   }
 `;
 
@@ -229,7 +218,7 @@ const PartnersRow = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 10px;
   #bidco {
     height: 20px;
     width: 30px;
@@ -275,7 +264,7 @@ const ContentWrap = styled.div`
   flex-direction: column;
   align-items: center;
   #main_photo {
-    height: 220px;
+    height: 200px;
   }
 `;
 

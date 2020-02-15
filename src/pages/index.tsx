@@ -36,15 +36,16 @@ const Landing: React.FC = () => {
           width="120px"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/clarity_LetuwhYTsW.png"
         />
-      </PartnersRow>
-
-      <PartnersRow>
         <Image
           id="mp"
           height="70px"
           width="120px"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/mp_logo_cnJizAy-6.png"
         />
+      </PartnersRow>
+
+      <PartnersRow>
+        
         <Image
           id="usiu"
           height="70px"
@@ -57,9 +58,6 @@ const Landing: React.FC = () => {
           width="120px"
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/barens_h44fUSLxf.jpg"
         />
-      </PartnersRow>
-
-      <PartnersRow>
         <Image
           id="incentro"
           height="25px"
@@ -73,6 +71,7 @@ const Landing: React.FC = () => {
           src="https://ik.imagekit.io/sgmianze96/gmc/partners/soulco_nAnhkBRxU.jpg"
         />
       </PartnersRow>
+
     </ModalWrapper>
   );
 
@@ -296,7 +295,7 @@ const PageWrapper = styled.div`
   }
   .popup-content {
     border-radius: 20px;
-    min-width: 90vw;
+    min-width: 70vw;
   }
 `;
 
