@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Page } from "../../components/styled_components";
+import Page from "../../components/layout/Page";
 import Row from "../../components/layout/Row";
 import Text from "../../components/common/Text";
 import Column from "../../components/layout/Column";
@@ -47,6 +47,7 @@ const Challenges: React.FC = () => {
         backgroundColor="#fdfdfd;"
       >
         <Text isTitle>ANNUAL CHALLENGES</Text>
+        <br />
         <ImgRow>
           <ImgContainer>
             <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
@@ -70,6 +71,7 @@ const Challenges: React.FC = () => {
         <br />
 
         <Text isTitle>IN-HOUSE</Text>
+        <br />
         <ImgRow>
           <ImgContainer>
             <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
@@ -125,5 +127,4 @@ const ImgContainer = styled.div`
         height: 130px;
         width: 130px;
       }
-    
 `;
