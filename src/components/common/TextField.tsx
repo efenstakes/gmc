@@ -5,16 +5,31 @@ import Text from "./Text";
 type Props = {
   label?: any;
   className?: any;
+  id?: any;
+  onKeyUp?: any;
+  onBlur?: any;
+  onKeyDown?: any;
+  onClick?: any;
+  onChange?: any;
+  onAbort?: any;
 };
 
 export default class TextField extends React.Component<Props> {
   render() {
     return (
-      <Wrapper className={this.props.className}>
+      <Wrapper className={this.props.className} id={this.props.id}>
         <label>
           <Text isBody>{this.props.label}</Text>
         </label>
-        <input type="text" />
+        <input
+          type="text"
+          onKeyUp={this.props.onKeyUp}
+          onBlur={this.props.onBlur}
+          onKeyDown={this.props.onKeyDown}
+          onClick={this.props.onClick}
+          onChange={this.props.onChange}
+          onAbort={this.props.onAbort}
+        />
       </Wrapper>
     );
   }

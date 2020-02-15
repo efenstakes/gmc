@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Popup from "reactjs-popup";
 
 import Page from "../../components/layout/Page";
 import Row from "../../components/layout/Row";
@@ -11,6 +12,13 @@ import Container from "../../components/common/Container";
 import MobileChallengesIndex from "../mobile/challenges/index";
 
 const Challenges: React.FC = () => {
+  //content of modal
+  const modalContent: any = (
+    <ModalWrapper>
+      <p>hello there</p>
+    </ModalWrapper>
+  );
+
   return window.screen.width < 740 ? (
     <MobileChallengesIndex />
   ) : (
@@ -50,19 +58,40 @@ const Challenges: React.FC = () => {
         <br />
         <ImgRow>
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>Induction</Text>
           </ImgContainer>
 
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>3-day challenge</Text>
           </ImgContainer>
 
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>Commencement</Text>
           </ImgContainer>
@@ -74,19 +103,40 @@ const Challenges: React.FC = () => {
         <br />
         <ImgRow>
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>Induction</Text>
           </ImgContainer>
 
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>3-day challenge</Text>
           </ImgContainer>
 
           <ImgContainer>
-            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <Popup
+              modal
+              trigger={
+                <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+              }
+            >
+              {modalContent}
+            </Popup>
             <br />
             <Text isBlue>Commencement</Text>
           </ImgContainer>
@@ -99,6 +149,9 @@ const Challenges: React.FC = () => {
 export default Challenges;
 
 const PageWrapper = styled.div`
+  .popup-content {
+    border-radius: 20px;
+  }
   @media (max-width: 769px) {
     #challenges {
       height: 270px;
@@ -121,10 +174,38 @@ const ImgContainer = styled.div`
     height: 175px;
     width: 175px;
     border-radius: 50% !important;
+    :hover {
+      box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.19);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
   }
   @media (max-width: 769px) {
       img {
         height: 130px;
         width: 130px;
       }
+`;
+
+const Avatar = styled.img`
+  height: 175px;
+  width: 175px;
+  border-radius: 50% !important;
+  :hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+      0 3px 15px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+`;
+
+const ModalWrapper = styled.div`
+  background-color: white;
+  * {
+    background-color: transparent;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px;
 `;
