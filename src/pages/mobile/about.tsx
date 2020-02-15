@@ -1,11 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Popup from "reactjs-popup";
 
 import Text from "../../components/common/Text";
 import Image from "../../components/common/Image";
 import Row from "../../components/layout/Row";
 
 const MobileAbout: React.FC = () => {
+  //content of modal
+  const modalContent: any = (
+    <ModalWrapper>
+      <Text isBody>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris.
+      </Text>
+    </ModalWrapper>
+  );
+
   return (
     <PageWrapper>
       <ContentWrap>
@@ -49,51 +61,59 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
         </Row>
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg" />
+            }
+          >
+            {modalContent}
+          </Popup>
         </Row>
       </ContentWrap>
 
@@ -106,51 +126,55 @@ const MobileAbout: React.FC = () => {
           width="70%"
         />
         <br />
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/ruthie_rono_FnRnN5DxX.jpeg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/eddie_sarroukh_jTBfCXFzT.jpeg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/wahu_kagwi_FjZBA0YlR.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
         </Row>
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/vimal_shah_NB82_BJcx.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/inspiration_board/jane_ngige_TWpF1BE5M.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Image
+            src="http://www.ringling.edu/sites/default/files/Blank_Canvas_on_Transparent_Background_0.png"
+            height="50px"
+            width="50px"
+            style={{ borderRadius: "50%" }}
+          />
         </Row>
       </ContentWrap>
 
@@ -163,51 +187,96 @@ const MobileAbout: React.FC = () => {
           width="60%"
         />
         <br />
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/decimar_ogutu_JPJW0MxSL.jpeg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/david_bernard-stevens_odas_jGE8.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/aart_bos_Z9QDWFTi5.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
         </Row>
-        <Row isDefault={true}>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
-          <div className="person_avatar">
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/p3l/avatar_yHHj_DT5a.svg"
-              height="35px"
-              width="35px"
-            />
-          </div>
+
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/mart-veeken_6fk15WB7d.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/susan-wamae_YsLgO55kh.png" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/dennis_de_weed_nFkBwobYl.png" />
+            }
+          >
+            {modalContent}
+          </Popup>
+        </Row>
+
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/irene_nchama_nDWrkoF0d.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/derek_bbanga_WZ26WVBpR.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/sheetal_shah_O2Cu1LH7w.jpeg" />
+            }
+          >
+            {modalContent}
+          </Popup>
+        </Row>
+
+        <Row isDefault>
+          <Popup
+            modal
+            trigger={
+              <Avatar src="https://ik.imagekit.io/sgmianze96/gmc/coaches/madelon_barens_tqHXxjgI1.jpg" />
+            }
+          >
+            {modalContent}
+          </Popup>
         </Row>
       </ContentWrap>
 
@@ -247,6 +316,10 @@ const PageWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 0;
+  .popup-content {
+    border-radius: 10px;
+    min-width: 90vw;
+  }
 `;
 
 const ContentWrap = styled.div`
@@ -255,25 +328,28 @@ const ContentWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  .person_avatar {
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    h4 {
-      font-family: "Nunito", sans-serif;
-      letter-spacing: 1px;
-      line-height: 1.8;
-      font-size: 14px;
-    }
-    h6 {
-      font-family: "Open Sans", sans-serif;
-      letter-spacing: 1px;
-      line-height: 1.8;
-      font-weight: 600;
-      color: grey;
-      font-size: 11px;
-    }
+`;
+
+const Avatar = styled.img`
+  height: 60px;
+  width: 60px;
+  padding: 0 5px;
+  border-radius: 50% !important;
+  :hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+      0 3px 15px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
   }
+`;
+
+const ModalWrapper = styled.div`
+  background-color: white;
+  * {
+    background-color: transparent;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px;
 `;

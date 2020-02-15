@@ -28,7 +28,7 @@ const About: React.FC = () => {
     </ModalWrapper>
   );
 
-  return window.screen.width < 740 ? (
+  return window.screen.width < 540 ? (
     <MobileAbout />
   ) : (
     <Wrapper>
@@ -206,7 +206,7 @@ const About: React.FC = () => {
       </Row>
       <br />
       <br />
-      <Row isDefault={true}>
+      <Row isDefault>
         <Column maxWidth={colWidth} minWidth={colWidth}>
           <Text isTitle>Coaches & Experts</Text>
           <Row isDefault>
