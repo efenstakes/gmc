@@ -296,6 +296,7 @@ const PageWrapper = styled.div`
   }
   .popup-content {
     border-radius: 20px;
+    min-width: 90vw;
   }
 `;
 

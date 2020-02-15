@@ -15,7 +15,11 @@ const Challenges: React.FC = () => {
   //content of modal
   const modalContent: any = (
     <ModalWrapper>
-      <p>hello there</p>
+      <Text isBody>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris.
+      </Text>
     </ModalWrapper>
   );
 
@@ -151,6 +155,7 @@ export default Challenges;
 const PageWrapper = styled.div`
   .popup-content {
     border-radius: 20px;
+    min-width: 90vw;
   }
   @media (max-width: 769px) {
     #challenges {

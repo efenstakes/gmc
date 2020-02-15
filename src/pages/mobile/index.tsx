@@ -218,6 +218,10 @@ const PageWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 0;
+  .popup-content {
+    border-radius: 10px;
+    min-width: 90vw;
+  }
 `;
 
 const PartnersRow = styled.div`
