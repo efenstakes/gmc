@@ -4,7 +4,6 @@ import Popup from "reactjs-popup";
 
 import Text from "../../components/common/Text";
 import Image from "../../components/common/Image";
-import Container from "../../components/common/Container";
 
 const MobileIndex: React.FC = () => {
   //partners modal content

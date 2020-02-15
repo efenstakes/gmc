@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 import { Page } from "../../components/styled_components";
 import Row from "../../components/layout/Row";
-import { ReasonsToJoin } from "../../components/styled_components";
 import Text from "../../components/common/Text";
 import Column from "../../components/layout/Column";
 import Image from "../../components/common/Image";
+import Container from "../../components/common/Container";
 
 import MobileChallengesIndex from "../mobile/challenges/index";
 
@@ -39,61 +39,57 @@ const Challenges: React.FC = () => {
       </Page>
       <br />
       <br />
-      <ReasonsToJoin>
-        <h2>ANNUAL CHALLENGES</h2>
-        <div className="img-row">
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>Induction</p>
-          </div>
+      <Container
+        isDefault={false}
+        padding="50px 120px;"
+        flexDirection="column;"
+        justifyContent="space-between;"
+        backgroundColor="#fdfdfd;"
+      >
+        <Text isTitle>ANNUAL CHALLENGES</Text>
+        <ImgRow>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>Induction</Text>
+          </ImgContainer>
 
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>3-day challenge</p>
-          </div>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>3-day challenge</Text>
+          </ImgContainer>
 
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>commencement</p>
-          </div>
-        </div>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>Commencement</Text>
+          </ImgContainer>
+        </ImgRow>
+        <br />
+        <br />
 
-        <h2>IN-HOUSE</h2>
-        <div className="img-row">
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>Induction</p>
-          </div>
+        <Text isTitle>IN-HOUSE</Text>
+        <ImgRow>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>Induction</Text>
+          </ImgContainer>
 
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>3-day challenge</p>
-          </div>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>3-day challenge</Text>
+          </ImgContainer>
 
-          <div className="img-container">
-            <img
-              src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg"
-              alt=""
-            />
-            <p>commencement</p>
-          </div>
-        </div>
-      </ReasonsToJoin>
+          <ImgContainer>
+            <Image src="https://ik.imagekit.io/sgmianze96/gmc/photos/challenges_induction_qXJKFz8AI.jpg" />
+            <br />
+            <Text isBlue>Commencement</Text>
+          </ImgContainer>
+        </ImgRow>
+      </Container>
     </PageWrapper>
   );
 };
@@ -106,14 +102,28 @@ const PageWrapper = styled.div`
       height: 270px;
       width: 90%;
     }
-    .img-container {
+  }
+`;
+
+const ImgRow = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+`;
+
+const ImgContainer = styled.div`
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50% !important;
+  }
+  @media (max-width: 769px) {
       img {
         height: 130px;
         width: 130px;
       }
-      p {
-        font-size: 18px;
-      }
-    }
-  }
+    
 `;
