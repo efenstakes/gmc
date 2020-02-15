@@ -171,9 +171,9 @@ const MobileAbout: React.FC = () => {
           </Popup>
           <Image
             src="http://www.ringling.edu/sites/default/files/Blank_Canvas_on_Transparent_Background_0.png"
-            height="50px"
-            width="50px"
-            style={{ borderRadius: "50%" }}
+            height="60px"
+            width="60px"
+            style={{ borderRadius: "50%", margin: "0 10px" }}
           />
         </Row>
       </ContentWrap>
@@ -333,7 +333,7 @@ const ContentWrap = styled.div`
 const Avatar = styled.img`
   height: 60px;
   width: 60px;
-  padding: 0 5px;
+  margin: 0 10px;
   border-radius: 50% !important;
   :hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
