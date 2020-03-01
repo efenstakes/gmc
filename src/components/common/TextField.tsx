@@ -5,7 +5,9 @@ import Text from "./Text";
 type Props = {
   label?: any;
   className?: any;
+  name?: any;
   id?: any;
+  type?: any;
   onKeyUp?: any;
   onBlur?: any;
   onKeyDown?: any;
@@ -22,7 +24,8 @@ export default class TextField extends React.Component<Props> {
           <Text isBody>{this.props.label}</Text>
         </label>
         <input
-          type="text"
+          type={this.props.type || "type"}
+          name={this.props.name}
           onKeyUp={this.props.onKeyUp}
           onBlur={this.props.onBlur}
           onKeyDown={this.props.onKeyDown}

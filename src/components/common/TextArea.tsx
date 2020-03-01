@@ -5,6 +5,8 @@ import Text from "./Text";
 type Props = {
   label?: any;
   className?: any;
+  name?: any;
+  onChange?: any;
 };
 
 export default class TextArea extends React.Component<Props> {
@@ -14,7 +16,11 @@ export default class TextArea extends React.Component<Props> {
         <label>
         <Text isBody>{this.props.label}</Text>
         </label>
-        <textarea className={this.props.className} rows={12}></textarea>
+        <textarea 
+            className={this.props.className} 
+            name={this.props.name} 
+            onChange={this.props.onChange}
+            rows={12}></textarea>
       </Wrapper>
     );
   }

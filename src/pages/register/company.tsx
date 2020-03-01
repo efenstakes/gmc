@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import axios from 'axios';
 
 import Text from "../../components/common/Text";
 import Row from "../../components/layout/Row";
@@ -10,10 +11,185 @@ import Container from "../../components/common/Container";
 import Button from "../../components/common/Button";
 import TextArea from "../../components/common/TextArea";
 import MobileCompanyApplication from "../mobile/register/company";
+import CvUploadField from "../../components/common/CvUploadField";
+import PhotoUploadField from "../../components/common/PhotoUploadField";
 
 // import MyForm from "../../components/form"
 
-export default class CompanyApplication extends React.Component {
+interface IProps {
+}
+
+interface IState {
+  companyName?: any,
+  companyEmail?: any,
+  companyPhone?: any,
+  applicantFullName?: any,
+  applicantTitle?: any,
+  applicantEmail?: any,
+  applicantPhone?: any,
+  applicantDob?: any,
+  applicantCV?: any,
+  applicantPhoto?: any,
+  expectations?: any,
+  
+  companyNameError?: String,
+  companyEmailError?: String,
+  companyPhoneError?: any,
+  applicantFullNameError?: String,
+  applicantTitleError?: String,
+  applicantEmailError?: String,
+  applicantDobError?: any,
+  applicantPhoneError?: any,
+  applicantCVError?: any,
+  applicantPhotoError?: any,
+  expectationsError?: String,
+  applicationError?: String,
+
+  applicationSuccess?: Boolean,
+}
+
+
+
+export default class CompanyApplication extends React.Component<IProps, IState> {
+  
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      companyName: '',
+      companyEmail: '',
+      companyPhone: '',
+      applicantFullName: '',
+      applicantTitle: '',
+      applicantEmail: '',
+      applicantPhone: '',
+      applicantDob: null,
+      applicantCV: null,
+      applicantPhoto: null,
+      expectations: '',
+      
+      companyNameError: '',
+      companyEmailError: '',
+      companyPhoneError: '',
+      applicantFullNameError: '',
+      applicantTitleError: '',
+      applicantEmailError: '',
+      applicantPhoneError: '',
+      applicantCVError: '',
+      applicantPhotoError: '',
+      expectationsError: '',
+      applicationError: '',
+      applicantDobError: '',
+
+      applicationSuccess: false,
+    }
+    
+    this.pageForm = this.pageForm.bind(this)
+    this.onInputChange = this.onInputChange.bind(this)
+    this.onFileChange = this.onFileChange.bind(this)
+    this.submitApplication = this.submitApplication.bind(this)
+  }
+
+    
+  onInputChange(event: any) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({ [name]: value });
+  }// onInputChange(event) { .. }
+
+  onFileChange(event: any) {
+    const target = event.target;
+    const name = target.name;
+    const file = target.files[0]
+
+    this.setState({ [name]: file });
+  }// onFileChangeCV(event) { .. }
+
+  // triggered to submit application
+  // check if required data is entered and valid
+  // submit
+  submitApplication(event: any) {
+    event.preventDefault();
+     
+    this.setState({ applicantEmail: 'ememem' })
+    console.log('submit data ', this.state);
+
+    let {
+      applicantFullName, applicantEmail, applicantPhone,
+      applicantTitle, applicantPhoto, applicantCV,
+      applicantDob, expectations, 
+      companyName, companyEmail, companyPhone
+    } = this.state
+
+    // validate data
+    if( applicantCV == null ) {
+      console.log('applicantCVError error')
+      this.setState({ ...this.state, applicantCVError: 'Please select your CV' })
+    } 
+    if( applicantPhoto == null ) {
+      this.setState({ applicantPhotoError: 'Please select your CV', ...this.state })
+    }  
+    if( !applicantFullName || applicantFullName.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your name', ...this.state })
+    }  
+    if( !applicantEmail || applicantEmail.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your email', ...this.state })
+    }  
+    if( !applicantTitle || applicantTitle.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your title', ...this.state })
+    }  
+    if( !applicantPhone || applicantPhone.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your phone', ...this.state })
+    }  
+    if( expectations == null ) {
+      this.setState({ applicantPhotoError: 'Please enter your expectations', ...this.state })
+    }  
+    if( !companyName || companyName.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your company name', ...this.state })
+    }  
+    if( !companyEmail || companyEmail.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your company email', ...this.state })
+    }  
+    if( !companyPhone || companyPhone.length < 5 ) {
+      this.setState({ applicantPhotoError: 'Please enter your company phone', ...this.state })
+    }  
+    
+    console.log('after checks ', this.state);
+
+    
+    const data = new FormData() 
+    data.append('applicant_cv', applicantCV)
+    data.append('applicant_photo', applicantPhoto)
+    data.append('applicant_fullname', applicantFullName)
+    data.append('applicant_email', applicantEmail)
+    data.append('applicant_phone', applicantPhone)
+    data.append('applicant_title', applicantTitle)
+    data.append('expectations', expectations)
+    data.append('applicant_dob', applicantDob)
+    data.append('company_name', companyName)
+    data.append('company_email', companyEmail)
+    data.append('company_phone', companyPhone)
+
+    console.log('b4 axios')
+    axios.post("http://localhost:8000/mail", data, {})
+      .then((res: any) => { 
+        console.log('after axios')
+        console.log('res ', res)
+      })
+      .catch((error: any)=> {
+        console.log('after axios')
+        console.log('error ', error)
+      })
+
+  }// submitApplication(event: any) { .. }
+
+
+  pageForm() {
+    // return 
+  }
+  
   render() {
     return window.screen.width < 740 ? (
       <MobileCompanyApplication />
@@ -47,19 +223,34 @@ export default class CompanyApplication extends React.Component {
           <br />
           <br />
 
+        
           <TextFieldRow>
-            <TextField className="textfield" label="Company name" />
-            <TextField className="textfield" label="Job title" />
+            <TextField className="textfield" label="Company name" 
+                       onChange={this.onInputChange}
+                       name="companyName"/>
+            <TextField className="textfield" label="Job title"
+                       onChange={this.onInputChange}
+                       name="applicantTitle" />
           </TextFieldRow>
           <br />
           <TextFieldRow>
-            <TextField className="textfield" label="Full name" />
-            <TextField className="textfield" label="Date of birth" />
+            <TextField className="textfield" label="Full name"
+                       onChange={this.onInputChange}
+                       name="applicantFullName" />
+            <TextField className="textfield" label="Date of birth"
+                       onChange={this.onInputChange}
+                       type="date" name="applicantDob" />
           </TextFieldRow>
           <br />
           <TextFieldRow>
-            <TextField className="textfield" label="E-mail address" />
-            <TextField className="textfield" label="Phone number" />
+            <TextField className="textfield" label="E-mail address"
+                       onChange={this.onInputChange}
+                       type="email"
+                       name="applicantEmail" />
+            <TextField className="textfield" label="Phone number"
+                       onChange={this.onInputChange}
+                       type="phone"
+                       name="applicantPhone" />
           </TextFieldRow>
         </Wrapper>
         <br />
@@ -81,7 +272,10 @@ export default class CompanyApplication extends React.Component {
               />
               <br />
               <br />
-              <Button text="Upload your picture" />
+              {/* <Button text="Upload your picture" /> */}
+              <PhotoUploadField 
+                  name="applicantPhoto"
+                  onChange={this.onFileChange} />
             </Column>
 
             <Column>
@@ -92,7 +286,10 @@ export default class CompanyApplication extends React.Component {
               />
               <br />
               <br />
-              <Button text="Upload your CV" />
+              {/* <Button text="Upload your CV" /> */}
+              <CvUploadField 
+                    name="applicantCV"
+                    onChange={this.onFileChange} />
             </Column>
           </UploadRow>
         </Container>
@@ -108,10 +305,14 @@ export default class CompanyApplication extends React.Component {
           <TextFieldRow>
             <TextField
               className="accountability-partner"
+              name="companyEmail"
+              onChange={this.onInputChange}
               label="E-mail address"
             />
             <TextField
               className="accountability-partner"
+              name="companyPhone"
+              onChange={this.onInputChange}
               label="Phone number"
             />
           </TextFieldRow>
@@ -119,20 +320,24 @@ export default class CompanyApplication extends React.Component {
           <br />
           <br />
           <br />
-          <TextArea label="What are your experctations of the Great Minds Challenge?" />
+          <TextArea 
+              label="What are your expectations of the Great Minds Challenge?"
+              name="expectations"
+              onChange={this.onInputChange} />
           <br />
           <br />
           <br />
           <br />
           <Row isDefault={true}>
-            <Button id="apply" className="final-btns" text="Apply" />
+            <Button id="apply" className="final-btns" 
+                    text="Apply"
+                    onClick={this.submitApplication} 
+                />
             <Button
-              route="/register"
-              id="cancel"
-              className="final-btns"
-              text="Cancel"
+              route="/register" id="cancel"
+              className="final-btns" text="Cancel"
             />
-          </Row>
+          </Row>          
           {/* <MyForm /> */}
         </Wrapper>
         <br />
