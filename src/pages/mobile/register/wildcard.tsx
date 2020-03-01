@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import axios from 'axios';
 
 import Text from "../../../components/common/Text";
 import Image from "../../../components/common/Image";
@@ -109,14 +110,15 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
   // submit
   submitApplication(event: any) {
     event.preventDefault();
-     
+
     this.setState({ applicantEmail: 'ememem' })
     console.log('submit data ', this.state);
 
     let {
       applicantFullName, applicantEmail, applicantPhone,
       applicantTitle, applicantPhoto, applicantCV,
-      expectations, companyName, companyEmail, companyPhone
+      applicantDob, expectations, 
+      companyName, companyEmail, companyPhone
     } = this.state
 
     // validate data
@@ -154,7 +156,32 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
     
     console.log('after checks ', this.state);
 
+    
+    const data = new FormData() 
+    data.append('applicant_cv', applicantCV)
+    data.append('applicant_photo', applicantPhoto)
+    data.append('applicant_fullname', applicantFullName)
+    data.append('applicant_email', applicantEmail)
+    data.append('applicant_phone', applicantPhone)
+    data.append('applicant_title', applicantTitle)
+    data.append('expectations', expectations)
+    data.append('applicant_dob', applicantDob)
+    data.append('company_name', companyName)
+    data.append('company_email', companyEmail)
+    data.append('company_phone', companyPhone)
 
+    console.log('b4 axios')
+    let url = 'https://secret-scrubland-69885.herokuapp.com'
+    // "http://localhost:8000/mail"
+    axios.post(`${url}/mail`, data, {})
+      .then((res: any) => { 
+        console.log('after axios')
+        console.log('res ', res)
+      })
+      .catch((error: any)=> {
+        console.log('after axios')
+        console.log('error ', error)
+      })
 
   }// submitApplication(event: any) { .. }
 

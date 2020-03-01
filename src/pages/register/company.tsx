@@ -173,7 +173,9 @@ export default class CompanyApplication extends React.Component<IProps, IState> 
     data.append('company_phone', companyPhone)
 
     console.log('b4 axios')
-    axios.post("http://localhost:8000/mail", data, {})
+    let url = 'https://secret-scrubland-69885.herokuapp.com'
+    // "http://localhost:8000/mail"
+    axios.post(`${url}/mail`, data, {})
       .then((res: any) => { 
         console.log('after axios')
         console.log('res ', res)
