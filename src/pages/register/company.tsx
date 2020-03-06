@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import axios from 'axios';
+import emailjs from 'emailjs-com';
+
 
 import Text from "../../components/common/Text";
 import Row from "../../components/layout/Row";
@@ -171,19 +173,41 @@ export default class CompanyApplication extends React.Component<IProps, IState> 
     data.append('company_name', companyName)
     data.append('company_email', companyEmail)
     data.append('company_phone', companyPhone)
+    var template_params = {
+      "applicant_fullname": applicantFullName,
+      "applicant_email": applicantEmail,
+      "applicant_phone": applicantPhone,
+      "applicant_dob": applicantDob,
+      "applicant_title": applicantTitle,
+      "expectations": expectations,
+      "company_name": companyName,
+      "company_email": companyEmail,
+      "company_phone": companyPhone,
+    }
+    var service_id = "default_service";
+    var template_id = "gmc";
+    emailjs.send(
+      service_id, template_id, template_params,
+      'user_UkYo1udgIBKyK0I5J8HQY'
+    ).then((res: any)=> {
+        console.log('emjs res ', res)
+    })
+    .catch((error: any)=> {
+        console.log('emjs error ', error)
+    })
 
-    console.log('b4 axios')
-    let url = 'https://secret-scrubland-69885.herokuapp.com'
-    // "http://localhost:8000/mail"
-    axios.post(`${url}/mail`, data, {})
-      .then((res: any) => { 
-        console.log('after axios')
-        console.log('res ', res)
-      })
-      .catch((error: any)=> {
-        console.log('after axios')
-        console.log('error ', error)
-      })
+    // console.log('b4 axios')
+    // let url = 'https://secret-scrubland-69885.herokuapp.com'
+    // // "http://localhost:8000/mail"
+    // axios.post(`${url}/mail`, data, {})
+    //   .then((res: any) => { 
+    //     console.log('after axios')
+    //     console.log('res ', res)
+    //   })
+    //   .catch((error: any)=> {
+    //     console.log('after axios')
+    //     console.log('error ', error)
+    //   })
 
   }// submitApplication(event: any) { .. }
 
