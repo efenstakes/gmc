@@ -186,28 +186,28 @@ export default class CompanyApplication extends React.Component<IProps, IState> 
     }
     var service_id = "default_service";
     var template_id = "gmc";
-    emailjs.send(
-      service_id, template_id, template_params,
-      'user_UkYo1udgIBKyK0I5J8HQY'
-    ).then((res: any)=> {
-        console.log('emjs res ', res)
-    })
-    .catch((error: any)=> {
-        console.log('emjs error ', error)
-    })
+    // emailjs.send(
+    //   service_id, template_id, template_params,
+    //   'user_UkYo1udgIBKyK0I5J8HQY'
+    // ).then((res: any)=> {
+    //     console.log('emjs res ', res)
+    // })
+    // .catch((error: any)=> {
+    //     console.log('emjs error ', error)
+    // })
 
-    // console.log('b4 axios')
-    // let url = 'https://secret-scrubland-69885.herokuapp.com'
-    // // "http://localhost:8000/mail"
-    // axios.post(`${url}/mail`, data, {})
-    //   .then((res: any) => { 
-    //     console.log('after axios')
-    //     console.log('res ', res)
-    //   })
-    //   .catch((error: any)=> {
-    //     console.log('after axios')
-    //     console.log('error ', error)
-    //   })
+    console.log('b4 axios')
+    let url = 'https://secret-scrubland-69885.herokuapp.com'
+    // "http://localhost:8000/mail"
+    axios.post(`${url}/mail`, data, {})
+      .then((res: any) => { 
+        console.log('after axios')
+        console.log('res ', res)
+      })
+      .catch((error: any)=> {
+        console.log('after axios')
+        console.log('error ', error)
+      })
 
   }// submitApplication(event: any) { .. }
 
