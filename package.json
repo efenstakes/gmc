@@ -1,9 +1,12 @@
 {
-  "homepage": "https://efenstakes.github.io/gmc",
+  "homepage": "www.greatmindsnairobi.co.ke",
   "name": "gmc_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.53",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,20 +14,21 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router": "^5.1.7",
     "@types/styled-components": "^4.4.1",
     "axios": "^0.19.2",
     "emailjs-com": "^2.4.1",
     "gh-pages": "^2.1.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dev-utils": "^10.2.1",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
     "reactjs-popup": "^1.5.0",
     "styled-components": "^4.4.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -47,6 +51,10 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.3"
+    "@types/react-router-dom": "^5.1.3",
+    "react-scripts": "^3.4.1"
+  },
+  "resolutions": {
+    "react-dev-utils": "10.1.0"
   }
 }

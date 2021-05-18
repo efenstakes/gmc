@@ -13,6 +13,15 @@ import CvUploadField from "../../../components/common/CvUploadField";
 
 
 
+import {
+  Button as MUI_Button,
+  CircularProgress, 
+  Snackbar,
+} from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert';
+
+
+
 interface IProps {
 }
 
@@ -29,6 +38,9 @@ interface IState {
   applicantPhoto?: any,
   expectations?: any,
   
+  isLoading?: boolean,
+  hasError?: boolean,
+
   companyNameError?: String,
   companyEmailError?: String,
   companyPhoneError?: any,
@@ -42,7 +54,7 @@ interface IState {
   expectationsError?: String,
   applicationError?: String,
 
-  applicationSuccess?: Boolean,
+  applicationSuccess?: boolean,
 }
 
 
@@ -79,7 +91,9 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
       applicationError: '',
       applicantDobError: '',
 
-      applicationSuccess: false,
+      applicationSuccess: undefined,
+      isLoading: false,
+      hasError: false
     }
     
     this.pageForm = this.pageForm.bind(this)
@@ -110,55 +124,82 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
   // submit
   submitApplication(event: any) {
     event.preventDefault();
-
-    this.setState({ applicantEmail: 'ememem' })
-    console.log('submit data ', this.state);
+     
+    // reset errors and loading states
+    let hasError = false;
+    this.setState({ 
+      isLoading: true, hasError: false, 
+    })
+    console.log('submit data ', this.state.isLoading);
 
     let {
       applicantFullName, applicantEmail, applicantPhone,
-      applicantTitle, applicantPhoto, applicantCV,
-      applicantDob, expectations, 
+      applicantTitle, applicantPhoto,
+      applicantDob, expectations, isLoading,
       companyName, companyEmail, companyPhone
     } = this.state
 
     // validate data
-    if( applicantCV == null ) {
-      console.log('applicantCVError error')
-      this.setState({ ...this.state, applicantCVError: 'Please select your CV' })
-    } 
+    console.log('state now ', this.state)
+    
     if( applicantPhoto == null ) {
-      this.setState({ applicantPhotoError: 'Please select your CV', ...this.state })
+      console.log('Please select your Photo ')
+      this.setState({ applicantPhotoError: 'Please select your Photo' })
+      hasError = true
     }  
     if( !applicantFullName || applicantFullName.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your name', ...this.state })
+      console.log('Please select your applicantFullName ')
+      this.setState({ applicantPhotoError: 'Please enter your name' })
+      hasError = true
     }  
     if( !applicantEmail || applicantEmail.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your email', ...this.state })
+      console.log('Please select your applicantEmail ')
+      this.setState({ applicantPhotoError: 'Please enter your email' })
+      hasError = true
     }  
     if( !applicantTitle || applicantTitle.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your title', ...this.state })
+      console.log('Please select your applicantTitle ')
+      this.setState({ applicantPhotoError: 'Please enter your title' })
+      hasError = true
     }  
     if( !applicantPhone || applicantPhone.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your phone', ...this.state })
+      console.log('Please select your applicantPhone ')
+      this.setState({ applicantPhotoError: 'Please enter your phone' })
+      hasError = true
     }  
     if( expectations == null ) {
-      this.setState({ applicantPhotoError: 'Please enter your expectations', ...this.state })
+      console.log('Please select your expectations ')
+      this.setState({ applicantPhotoError: 'Please enter your expectations' })
+      hasError = true
     }  
     if( !companyName || companyName.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your company name', ...this.state })
+      console.log('Please select your companyName ')
+      this.setState({ applicantPhotoError: 'Please enter your company name' })
+      hasError = true
     }  
     if( !companyEmail || companyEmail.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your company email', ...this.state })
+      console.log('Please select your companyEmail ')
+      this.setState({ applicantPhotoError: 'Please enter your company email' })
+      hasError = true
     }  
     if( !companyPhone || companyPhone.length < 5 ) {
-      this.setState({ applicantPhotoError: 'Please enter your company phone', ...this.state })
+      console.log('Please select your companyPhone ')
+      this.setState({ applicantPhotoError: 'Please enter your company phone' })
+      hasError = true
     }  
     
-    console.log('after checks ', this.state);
+    console.log('state after checks >>> ', this.state);
 
-    
+    // check if we have errors
+    if( hasError ) {
+      console.log('we have error')
+      this.setState({ hasError: true, isLoading: false })
+      return
+    } else {
+      console.log('no errors, we good')
+    }
+
     const data = new FormData() 
-    data.append('applicant_cv', applicantCV)
     data.append('applicant_photo', applicantPhoto)
     data.append('applicant_fullname', applicantFullName)
     data.append('applicant_email', applicantEmail)
@@ -169,18 +210,30 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
     data.append('company_name', companyName)
     data.append('company_email', companyEmail)
     data.append('company_phone', companyPhone)
+    data.append('application_type', 'Wildcard')
 
     console.log('b4 axios')
-    let url = 'https://secret-scrubland-69885.herokuapp.com'
-    // "http://localhost:8000/mail"
+    let url = 'https://enigmatic-coast-88833.herokuapp.com'
+    // let url = "http://localhost:3333"
     axios.post(`${url}/mail`, data, {})
       .then((res: any) => { 
         console.log('after axios')
         console.log('res ', res)
+        
+   
+        if( res['data']['send'] ) { console.log('all ok')
+          this.setState({ isLoading: false, hasError: false, applicationSuccess: true })
+          return
+        } else { console.log('not all ok')
+          this.setState({ isLoading: false, hasError: true, applicationSuccess: false })
+          return
+        }
+
       })
       .catch((error: any)=> {
         console.log('after axios')
         console.log('error ', error)
+        this.setState({ isLoading: false, hasError: true, applicationSuccess: false })
       })
 
   }// submitApplication(event: any) { .. }
@@ -257,18 +310,6 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
                 />
           </Row>
           <br />
-          <Row isDefault={true}>
-            <Image
-              src="https://ik.imagekit.io/sgmianze96/gmc/isometrics/cv_o_IH3BSf9.png"
-              height="100px"
-              width="50px"
-            />
-            {/* <Button text="Upload your CV" /> */}
-            <CvUploadField 
-                name="applicantCV"
-                onChange={this.onFileChange}
-                />
-          </Row>
         </Container>
   
         <ContentWrap>
@@ -294,9 +335,27 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
             />
             <br />
             <br />
-            <Button id="apply" className="final-btns" 
-                    text="Apply"
-                    onClick={this.submitApplication}  />
+                        
+            {
+              this.state.isLoading 
+                ? <Row isDefault={true}>
+                    <CircularProgress />
+                    <p 
+                      style={{ 
+                        marginLeft: '12px',
+                        fontSize: '1.4em',
+                        fontWeight: 600,
+                        color: '#4f7cbd' 
+                      }}>
+                      Submitting Application...
+                    </p>
+                </Row>
+                : <Button id="apply" className="final-btns" 
+                      text="Apply"
+                      onClick={this.submitApplication} 
+                    />
+            }
+                        
             <br />
             <Button
               route="/register"
@@ -305,6 +364,21 @@ class  MobileWildcardApplication extends React.Component<IProps, IState> {
               text="Cancel"
             />
           </TextFieldCol>
+
+          
+
+          <Snackbar open={this.state.applicationSuccess} autoHideDuration={6000}>
+            <Alert severity="success">
+              Your application has been received by GMC.
+            </Alert>
+          </Snackbar>
+          
+          <Snackbar open={ this.state.applicationSuccess === false } autoHideDuration={6000}>
+            <Alert severity="warning">
+              Application send error. Resend after some time.
+            </Alert>
+          </Snackbar>
+
         </ContentWrap>
         <br />
         <br />
